@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Mietshaus</comment>
+	<entry key="Name">Mietshaus</entry>
+	<entry key="Zeitalter">Spaetes_Mittelalter</entry>
+	<entry key="Werkzeug">20274</entry>
+	<entry key="Muenzen">5394</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">26400</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">205</entry>
+	<entry key="Einnahme">440</entry>
+	<entry key="Einnahmedauer">28800</entry>
+</properties>

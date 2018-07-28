@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Nutztiergehege</comment>
+	<entry key="Name">Nutztiergehege</entry>
+	<entry key="Zeitalter">Bronzezeit</entry>
+	<entry key="Muenzen">0</entry>
+	<entry key="Werkzeug">0</entry>
+	<entry key="Personen">40</entry>
+	<entry key="Diamanten">200</entry>
+	<entry key="Laenge">4</entry>
+	<entry key="Breite">0</entry>
+	<entry key="Bauzeit">20</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">68</entry>
+	<entry key="15_min">171</entry>
+	<entry key="1_h">411</entry>
+	<entry key="4_h">684</entry>
+	<entry key="8_h">1027</entry>
+	<entry key="1_t">2053</entry>
+	<entry key="Name_5_min">Huhn</entry>
+	<entry key="Name_15_min">Ziege</entry>
+	<entry key="Name_1_h">Schaf</entry>
+	<entry key="Name_4_h">Pferd</entry>
+	<entry key="Name_8_h">Stier</entry>
+	<entry key="Name_1_t">Wolf</entry>
+</properties>

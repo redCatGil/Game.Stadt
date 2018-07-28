@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Schmiede</comment>
+	<entry key="Name">Schmiede</entry>
+	<entry key="Zeitalter">Bronzezeit</entry>
+	<entry key="Muenzen">412</entry>
+	<entry key="Werkzeug">38</entry>
+	<entry key="Personen">12</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">1200</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">8</entry>
+	<entry key="15_min">21</entry>
+	<entry key="1_h">32</entry>
+	<entry key="4_h">83</entry>
+	<entry key="8_h">125</entry>
+	<entry key="1_t">249</entry>
+	<entry key="Name_5_min">Flasche</entry>
+	<entry key="Name_15_min">Kleine Töpfe</entry>
+	<entry key="Name_1_h">Gefäße</entry>
+	<entry key="Name_4_h">Kanne</entry>
+	<entry key="Name_8_h">Amphore</entry>
+	<entry key="Name_1_t">Krug</entry>
+</properties>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_strohgedecktes_Haus</comment>
+	<entry key="Name">strohgedecktes Haus</entry>
+	<entry key="Zeitalter">Bronzezeit</entry>
+	<entry key="Muenzen">148</entry>
+	<entry key="Werkzeug">279</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">300</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">27</entry>
+	<entry key="Einnahme">32</entry>
+	<entry key="Einnahmedauer">3600</entry>
+</properties>

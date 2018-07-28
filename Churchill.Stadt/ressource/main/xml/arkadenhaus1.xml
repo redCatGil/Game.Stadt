@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Arkadenhaus</comment>
+	<entry key="Name">Arkadenhaus</entry>
+	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Muenzen">5336</entry>
+	<entry key="Werkzeug">20056</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">22800</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">155</entry>
+	<entry key="Einnahme">180</entry>
+	<entry key="Einnahmedauer">3600</entry>
+</properties>

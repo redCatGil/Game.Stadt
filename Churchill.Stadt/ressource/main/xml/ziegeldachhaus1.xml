@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Ziegeldachhaus</comment>
+	<entry key="Name">Ziegeldachhaus</entry>
+	<entry key="Zeitalter">Eisenzeit</entry>
+	<entry key="Muenzen">372</entry>
+	<entry key="Werkzeug">558</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">1200</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">44</entry>
+	<entry key="Einnahme">15</entry>
+	<entry key="Einnahmedauer">900</entry>
+</properties>

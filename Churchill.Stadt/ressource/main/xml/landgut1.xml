@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Landgut</comment>
+	<entry key="Name">Landgut</entry>
+	<entry key="Zeitalter">Spaetes_Mittelalter</entry>
+	<entry key="Werkzeug">0</entry>
+	<entry key="Muenzen">0</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">300</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">20</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">246</entry>
+	<entry key="Einnahme">400</entry>
+	<entry key="Einnahmedauer">14400</entry>
+</properties>

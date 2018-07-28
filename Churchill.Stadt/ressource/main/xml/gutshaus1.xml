@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Gutshaus</comment>
+	<entry key="Name">Gutshaus</entry>
+	<entry key="Zeitalter">Spaetes_Mittelalter</entry>
+	<entry key="Werkzeug">13485</entry>
+	<entry key="Muenzen">3626</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">19800</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">123</entry>
+	<entry key="Einnahme">120</entry>
+	<entry key="Einnahmedauer">3600</entry>
+</properties>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Schindelhaus</comment>
+	<entry key="Name">Schindelhaus</entry>
+	<entry key="Zeitalter">Fruehes_Mittelalter</entry>
+	<entry key="Muenzen">929</entry>
+	<entry key="Werkzeug">3626</entry>
+	<entry key="Personen">0</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">2</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">6600</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Bewohner">111</entry>
+	<entry key="Einnahme">240</entry>
+	<entry key="Einnahmedauer">28800</entry>
+</properties>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Obstplantage</comment>
+	<entry key="Name">Obstplantage</entry>
+	<entry key="Zeitalter">Bronzezeit</entry>
+	<entry key="Muenzen">1592</entry>
+	<entry key="Werkzeug">118</entry>
+	<entry key="Personen">50</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">5</entry>
+	<entry key="Breite">4</entry>
+	<entry key="Bauzeit">2400</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">0</entry>
+	<entry key="15_min">0</entry>
+	<entry key="1_h">130</entry>
+	<entry key="4_h">0</entry>
+	<entry key="8_h">0</entry>
+	<entry key="1_t">0</entry>
+	<entry key="Name_5_min">unbekannt</entry>
+	<entry key="Name_15_min">unbekannt</entry>
+	<entry key="Name_1_h">unbekannt</entry>
+	<entry key="Name_4_h">unbekannt</entry>
+	<entry key="Name_8_h">unbekannt</entry>
+	<entry key="Name_1_t">unbekannt</entry>
+</properties>
