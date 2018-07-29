@@ -75,9 +75,9 @@ public class Toolbox {
 		case 0:
 			return new Huette();
 
-//		case 1:
-//			return new Langhaus();
-//
+		case 1:
+			return new Langhaus();
+
 //		case 2:
 //			return new Pfahlbau();
 //
