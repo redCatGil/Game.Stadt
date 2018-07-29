@@ -61,7 +61,7 @@ public class HuettenTest {
 		laenge = new Integer(props.getProperty("Laenge")).intValue();
 		breite = new Integer(props.getProperty("Breite")).intValue();
 		bauzeit = new Integer(props.getProperty("Bauzeit")).intValue();
-		personen = new Integer(props.getProperty("Personen")).intValue();
+		personen = new Integer(props.getProperty("Bewohner")).intValue();
 		einnahme = new Integer(props.getProperty("Einnahme")).intValue();
 		einnahmedauer = new Integer(props.getProperty("Einnahmedauer")).intValue();
 		
@@ -73,56 +73,69 @@ public class HuettenTest {
   @Test
   public void huettenname_muss_huette_sein() {
 	  Assert.assertEquals(huette.getName(), name);
+	  Assert.assertEquals(huette.getName(), "Hütte");
   }
   
   @Test
   public void zeitalter_muss_steinzeit_sein() {
 	  Assert.assertEquals(huette.getZeitalter(), zeitalter);
+	  Assert.assertEquals(huette.getZeitalter(), "Steinzeit");
   }
   
   @Test
   public void huette_kostet_keine_muenzen() {
 	  Assert.assertEquals(huette.getMuenzen().intValue(), muenzen);
+	  Assert.assertEquals(huette.getMuenzen().intValue(), 0);
   }
   
   @Test
   public void huettenbau_kostest_55_werkzeug() {
 	  Assert.assertEquals(huette.getWerkzeug().intValue(), werkzeug);
+	  Assert.assertEquals(huette.getWerkzeug().intValue(), 55);
   }
   
   @Test
   public void huette_kostet_keine_daimanten() {
 	  Assert.assertEquals(huette.getDiamanten().intValue(), diamanten);
+	  Assert.assertEquals(huette.getDiamanten().intValue(), 0);
   }
   
   @Test
   public void huette_ist_2_lang() {
 	  Assert.assertEquals(huette.getLaenge().intValue(), laenge);
+	  Assert.assertEquals(huette.getLaenge().intValue(), 2);
   }
   
   @Test
   public void huette_ist_2_breit() {
 	  Assert.assertEquals(huette.getBreite().intValue(), breite);
+	  Assert.assertEquals(huette.getBreite().intValue(), 2);
   }
   
   @Test
   public void bauzeit_heutte_ist_5_sec() {
 	  Assert.assertEquals(huette.getBauzeit().get(Calendar.SECOND), bauzeit);
+	  Assert.assertEquals(huette.getBauzeit().get(Calendar.MINUTE), 0);
+	  Assert.assertEquals(huette.getBauzeit().get(Calendar.HOUR), 0);
+	  Assert.assertEquals(huette.getBauzeit().get(Calendar.SECOND), 5);
   }
   
   @Test
   public void huette_hat_14_bewohner() {
 	  Assert.assertEquals(huette.getBewohner().intValue(), personen);
+	  Assert.assertEquals(huette.getBewohner().intValue(), 14);
   }
   
   @Test
   public void huetteneinnahme_ist_6_muenzen() {
 	  Assert.assertEquals(huette.getMuenz_einnahmen().intValue(), einnahme);
+	  Assert.assertEquals(huette.getMuenz_einnahmen().intValue(), 6);
   }
   
   @Test
   public void heutte_hat_alle_300_sec_einnahmen() {
 	  Assert.assertEquals(huette.getEinnahme_dauer().intValue(), einnahmedauer);
+	  Assert.assertEquals(huette.getEinnahme_dauer().intValue(), 300);
   }
   
   @Test
