@@ -81,9 +81,9 @@ public class Toolbox {
 		case 2:
 			return new Pfahlbau();
 
-//		case 3:
-//			return new StrohgedecktesHaus();
-//
+		case 3:
+			return new StrohgedecktesHaus();
+
 //		case 4:
 //			return new Chalet();
 //
