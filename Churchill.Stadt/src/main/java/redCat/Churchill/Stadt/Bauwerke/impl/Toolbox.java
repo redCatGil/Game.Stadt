@@ -93,12 +93,12 @@ public class Toolbox {
 		case 6:
 			return new Domizil();
 
-//		case 7:
-//			return new Ziegeldachhaus();
-//
-//		case 8:
-//			return new Schindelhaus();
-//
+		case 7:
+			return new Ziegeldachhaus();
+
+		case 8:
+			return new Schindelhaus();
+
 //		case 9:
 //			return new Fachwerkhaus();
 //
