@@ -99,9 +99,9 @@ public class Toolbox {
 		case 8:
 			return new Schindelhaus();
 
-//		case 9:
-//			return new Fachwerkhaus();
-//
+		case 9:
+			return new Fachwerkhaus();
+
 //		case 10:
 //			return new Stadthaus();
 //
