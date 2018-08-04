@@ -87,12 +87,12 @@ public class Toolbox {
 		case 4:
 			return new Chalet();
 
-//		case 5:
-//			return new Villa();
-//
-//		case 6:
-//			return new Domizil();
-//
+		case 5:
+			return new Villa();
+
+		case 6:
+			return new Domizil();
+
 //		case 7:
 //			return new Ziegeldachhaus();
 //

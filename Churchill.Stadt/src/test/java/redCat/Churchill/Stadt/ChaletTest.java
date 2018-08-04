@@ -115,7 +115,7 @@ public class ChaletTest {
   }
   
   @Test
-  public void chalet_pfahlbau_ist_10_Minuten() {
+  public void bauzeit_chalet_ist_10_Minuten() {
 	  Assert.assertEquals(chalet.getBauzeit().get(Calendar.SECOND), Toolbox.ermittleSekunden(bauzeit));
 	  Assert.assertEquals(chalet.getBauzeit().get(Calendar.MINUTE), Toolbox.ermittleMinuten(bauzeit));
 	  Assert.assertEquals(chalet.getBauzeit().get(Calendar.HOUR), Toolbox.ermittleStunden(bauzeit));
@@ -143,7 +143,7 @@ public class ChaletTest {
   }
   
   @Test
-  public void pfahlbau_benoetigt_strasse() {
+  public void chalet_benoetigt_strasse() {
 	  Assert.assertEquals(chalet.isStrasse_benoetigt(), true);
   }
 
