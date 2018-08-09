@@ -102,15 +102,15 @@ public class Toolbox {
 		case 9:
 			return new Fachwerkhaus();
 
-//		case 10:
-//			return new Stadthaus();
-//
-//		case 11:
-//			return new Sandsteinhaus();
-//
-//		case 12:
-//			return new Herrenhaus();
-//
+		case 10:
+			return new Stadthaus();
+
+		case 11:
+			return new Sandsteinhaus();
+
+		case 12:
+			return new Herrenhaus();
+
 //		case 13:
 //			return new Landgut();
 //
