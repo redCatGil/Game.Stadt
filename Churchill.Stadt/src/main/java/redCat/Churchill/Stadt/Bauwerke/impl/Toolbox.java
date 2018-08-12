@@ -117,12 +117,12 @@ public class Toolbox {
 		case 14:
 			return new Gutshaus();
 
-//		case 15:
-//			return new Mietshaus();
-//
-//		case 16:
-//			return new Arkadenhaus();
-//			
+		case 15:
+			return new Mietshaus();
+
+		case 16:
+			return new Arkadenhaus();
+			
 //		case 17:
 //			return new Kolonialhaus();
 //		case 18:
