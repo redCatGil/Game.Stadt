@@ -135,9 +135,9 @@ public class Toolbox {
 
 	}
 	
-//	public static Produktionsgebaeude ProdAuswahl(int prod) {
-//		switch (prod) {
-//		case 0: return new Jagdlager();
+	public static Produktionsgebaeude ProdAuswahl(int prod) {
+		switch (prod) {
+		case 0: return new Jagdlager();
 //		
 //		case 1: return new Toepferei();
 //		
@@ -149,9 +149,9 @@ public class Toolbox {
 //		
 //		case 5: return new Metzgerei();
 //			
-//		default: return null;
-//		}
-//		
-//	}
+		default: return null;
+		}
+		
+	}
 
 }
