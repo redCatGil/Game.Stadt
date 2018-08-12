@@ -123,10 +123,12 @@ public class Toolbox {
 		case 16:
 			return new Arkadenhaus();
 			
-//		case 17:
-//			return new Kolonialhaus();
-//		case 18:
-//			return new Landhaus();
+		case 17:
+			return new Kolonialhaus();
+
+		case 18:
+			return new Landhaus();
+
 		default:
 			return null;
 		}
