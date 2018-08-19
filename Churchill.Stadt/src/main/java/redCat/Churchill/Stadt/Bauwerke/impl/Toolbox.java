@@ -138,11 +138,11 @@ public class Toolbox {
 	public static Produktionsgebaeude ProdAuswahl(int prod) {
 		switch (prod) {
 		case 0: return new Jagdlager();
-//		
-//		case 1: return new Toepferei();
-//		
-//		case 2: return new Obstplantage();
-//		
+		
+		case 1: return new Toepferei();
+		
+		case 2: return new Obstplantage();
+		
 //		case 3: return new Nutztiergehege();
 //		
 //		case 4: return new Schmiede();
