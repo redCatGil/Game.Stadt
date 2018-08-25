@@ -147,8 +147,12 @@ public class Toolbox {
 		
 		case 4: return new Schmiede();
 		
-//		case 5: return new Metzgerei();
-//			
+		case 5: return new Metzgerei();
+		
+		case 6: return new Metzgerei();
+		
+		case 7: return new Metzgerei();
+			
 		default: return null;
 		}
 		
