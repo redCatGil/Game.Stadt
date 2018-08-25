@@ -12,16 +12,16 @@
 	<entry key="Breite">2</entry>
 	<entry key="Bauzeit">1200</entry>
 	<entry key="Strasse">true</entry>
-	<entry key="5_min">8</entry>
-	<entry key="15_min">21</entry>
+	<entry key="5_min">5</entry>
+	<entry key="15_min">13</entry>
 	<entry key="1_h">32</entry>
-	<entry key="4_h">83</entry>
-	<entry key="8_h">125</entry>
-	<entry key="1_t">249</entry>
-	<entry key="Name_5_min">Flasche</entry>
-	<entry key="Name_15_min">Kleine Töpfe</entry>
-	<entry key="Name_1_h">Gefäße</entry>
-	<entry key="Name_4_h">Kanne</entry>
-	<entry key="Name_8_h">Amphore</entry>
-	<entry key="Name_1_t">Krug</entry>
+	<entry key="4_h">53</entry>
+	<entry key="8_h">80</entry>
+	<entry key="1_t">160</entry>
+	<entry key="Name_5_min">Einfaches Hufeisen</entry>
+	<entry key="Name_15_min">Gutes Hufeisen</entry>
+	<entry key="Name_1_h">Greifzange</entry>
+	<entry key="Name_4_h">Zange</entry>
+	<entry key="Name_8_h">Schloss</entry>
+	<entry key="Name_1_t">Helm</entry>
 </properties>

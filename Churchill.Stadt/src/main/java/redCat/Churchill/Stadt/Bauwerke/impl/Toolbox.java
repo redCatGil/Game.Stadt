@@ -143,10 +143,10 @@ public class Toolbox {
 		
 		case 2: return new Obstplantage();
 		
-//		case 3: return new Nutztiergehege();
-//		
-//		case 4: return new Schmiede();
-//		
+		case 3: return new Nutztiergehege();
+		
+		case 4: return new Schmiede();
+		
 //		case 5: return new Metzgerei();
 //			
 		default: return null;
