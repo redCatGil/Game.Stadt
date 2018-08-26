@@ -1,6 +1,7 @@
 package redCat.Churchill.Stadt.Bauwerke.impl;
 
 import redCat.Churchill.Stadt.Bauwerke.api.Produktionsgebaeude_api;
+import redCat.Churchill.Stadt.Enumeration.Gebaeude_Art_enum;
 
 public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude_api {
 	
@@ -16,6 +17,7 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	private String name_4_h;
 	private String name_8_h;
 	private String name_1_t;
+	private String gebaeude_art;
 	
 	/* ***********************************************************************************************
 	 * 
@@ -30,19 +32,17 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	}
 	
 	/**
-	 * Produktionsgeb�udekonstruktur
-	 * Dieser Konstruktor ruft die Erzeugung eines Ge�budes auf. Dabei wird ein Wert mit Konstanten gef�llt:
-	 *   - die Angabe, dass eine Stra�e ben�tigt wird mit true
-	 * Beide Werte sind daher nicht mehr im Konstruktoraufruf enthalten!!
+	 * Produktionsgebäudekonstruktur
+	 * Dieser Konstruktor ruft die Erzeugung eines Gebäudes auf. 
 	 * 
-	 * @param name           - Name des Geb�udes
+	 * @param name           - Name des Gebäudes
 	 * @param zeitalter      - Zeitalter als String
-	 * @param muenzen		 - Anzahl M�nzen die zur Erstellung ben�tigt werden
-	 * @param werkzeug	     - Anzahl Werkzeug die zur Erstellung ben�tigt werden
-	 * @param personen       - Anzahl Personen die zur Erstellung ben�tigt werden
-	 * @param diamanten      - Anzahl Diamanten die zur Erstellung ben�tigt werden
-	 * @param laenge         - Grundfl�che des Geb�udes - L�ngenangabe 
-	 * @param breite         - Grundfl�che des Geb�udes - Breitenangabe
+	 * @param muenzen		 - Anzahl Münzen die zur Erstellung benötigt werden
+	 * @param werkzeug	     - Anzahl Werkzeug die zur Erstellung benötigt werden
+	 * @param personen       - Anzahl Personen die zur Erstellung benötigt werden
+	 * @param diamanten      - Anzahl Diamanten die zur Erstellung benötigt werden
+	 * @param laenge         - Grundfläche des Gebäudes - Längenangabe 
+	 * @param breite         - Grundfläche des Gebäudes - Breitenangabe
 	 * @param zeit           - Erstellungszeit als int-Wert in Sekunden
 	 * @param in_5_min		 - Anzahl der Werkzeuge, die in 5 Minuten hergestellt werden
 	 * @param in_15_min      - Anzahl der Werkzeuge, die in 15 Minuten hergestellt werden
@@ -54,10 +54,10 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	public Produktionsgebaeude(String name, String zeitalter, int muenzen, int werkzeug, int personen, int diamanten,
 			int laenge, int breite, int zeit, boolean strasse, int in_5_min, int in_15_min, int in_1_h,
 			int in_4_h, int in_8_h, int in_1_tag, String name_5_min, String name_15_min, String name_1_h, 
-			String name_4_h, String name_8_h, String name_1_t) {
+			String name_4_h, String name_8_h, String name_1_t, String gebaeude_art) {
 		
 		//aufruf des übergeordneten Konstruktors
-		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, zeit, true);
+		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, zeit, strasse);
 		
 		//neue Attribute setzen
 		this.in_5_Minuten = new Integer(in_5_min);
@@ -72,6 +72,8 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		this.name_4_h = name_4_h;
 		this.name_8_h = name_8_h;
 		this.name_1_t = name_1_t;
+		
+		this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
 	}
 	
 	/* ***********************************************************************************************
@@ -273,9 +275,20 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		this.name_1_t = name_1_t;
 	}
 	
+	//***************************** Art des Gebäudes ******************************************
+	
+	public String getGebaeude_art() {
+		return gebaeude_art;
+	}
+
+	public void setGebaeude_art(String gebaeude_art) {
+		this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
+		
+	}
+	
 	/* ********************************************************************************************************************************
 	 *                                                                                                                                *
-	 *                         �berschriebene Funktionen und Methoden                                                                 *
+	 *                         überschriebene Funktionen und Methoden                                                                 *
 	 *                                                                                                                                *
 	 * ********************************************************************************************************************************                         	
 	 */
@@ -299,6 +312,8 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		double prod = produktion * fak + 0.5;
 		return new Integer((int) prod);
 	}
+
+	
 	
 	
 	

@@ -122,6 +122,16 @@ public interface Produktionsgebaeude_api {
 	 */
 	void setName_1_t(String name_1_t);
 	
+	/**
+	 * @return the gebaeude_art
+	 */
+	String getGebaeude_art();
+
+	/**
+	 * @param gebaeude_art the gebaeude_art to set
+	 */
+	void setGebaeude_art(String gebaeude_art);
+	
 	
 	Integer berechneProduktion(Integer produktion, Integer faktor);
 

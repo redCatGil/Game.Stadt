@@ -40,6 +40,7 @@ public class MetzgereiTest {
 	private String name_prod_8_h;
 	private String name_prod_1_t;
 	private boolean strasse;
+	private String gebaeude_art;
 	
   
   @BeforeMethod
@@ -87,6 +88,7 @@ public class MetzgereiTest {
 		name_prod_4_h = props.getProperty("Name_4_h");
 		name_prod_8_h = props.getProperty("Name_8_h");
 		name_prod_1_t = props.getProperty("Name_1_t");
+		gebaeude_art = props.getProperty("Geb_Art");
 		if (props.getProperty("Strasse").compareToIgnoreCase("true") == 0) {
 			  strasse = true;
 
@@ -95,7 +97,7 @@ public class MetzgereiTest {
 		  }
 		
 		metzgerei = new Metzgerei(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, bauzeit, strasse, wz_5_min, wz_15_min, wz_1_h, wz_4_h, wz_8_h, wz_1_t, 
-				                  name_prod_5_min, name_prod_15_min, name_prod_1_h, name_prod_4_h, name_prod_8_h, name_prod_1_t);
+				                  name_prod_5_min, name_prod_15_min, name_prod_1_h, name_prod_4_h, name_prod_8_h, name_prod_1_t, gebaeude_art);
 	           
   }
   
@@ -235,6 +237,11 @@ public class MetzgereiTest {
 	  Assert.assertEquals(metzgerei.getName_1_t(), "Fleischspieß");
   }
   
+  @Test
+  public void metzgerei_ist_normales_gebaeude() {
+	  Assert.assertEquals(metzgerei.getGebaeude_art(), gebaeude_art);
+	  Assert.assertEquals(metzgerei.getGebaeude_art(), "Normal");
+  }
  
 
 }

@@ -67,6 +67,7 @@ public class Metzgerei extends Produktionsgebaeude {
 		this.setName_4_h(props.getProperty("Name_4_h"));
 		this.setName_8_h(props.getProperty("Name_8_h"));
 		this.setName_1_t(props.getProperty("Name_1_t"));
+		this.setGebaeude_art(props.getProperty("Geb_Art"));
 		
 	}
 
@@ -75,11 +76,11 @@ public class Metzgerei extends Produktionsgebaeude {
 			boolean strasse, int in_5_min, int in_15_min, int in_1_h,
 			int in_4_h, int in_8_h, int in_1_tag, String name_5_min,
 			String name_15_min, String name_1_h, String name_4_h,
-			String name_8_h, String name_1_t) {
+			String name_8_h, String name_1_t, String gebaeude_art) {
 		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge,
 				breite, zeit, strasse, in_5_min, in_15_min, in_1_h, in_4_h,
 				in_8_h, in_1_tag, name_5_min, name_15_min, name_1_h, name_4_h,
-				name_8_h, name_1_t);
+				name_8_h, name_1_t, gebaeude_art);
 		// TODO Auto-generated constructor stub
 	}
 
