@@ -18,6 +18,7 @@ public class Bauwerke_Tools {
 		hm.put(Zeitalter.Hochmittelalter, new Double("20"));
 		hm.put(Zeitalter.Spaetes_Mittelalter, new Double("30"));
 		hm.put(Zeitalter.Kolonialzeit, new Double("50"));
+		hm.put(Zeitalter.Industriezeitalter, new Double("100"));
 		
 		return hm;
 	}

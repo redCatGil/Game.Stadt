@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class Langhaus extends Wohngebaeude {
 	
-	private final String DSN = "langhaus1.xml";
+	private final String DSN = "ressource/main/xml/langhaus1.xml";
 
 	public Langhaus() {
 		super();

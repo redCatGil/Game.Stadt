@@ -323,9 +323,9 @@ public class WohngebaeudeAnzeige extends Dialog {
 //					System.out.println(wog.toString());
 					txt9.setText(txt9.getText() + Toolbox.intToTime(wog.getEinnahme_dauer().intValue()));
 					txt10.setText(Toolbox.TimeToString(wog.getBauzeit()));	
-					double gf = 1;
+					double gf = 1.0;
 					if (wog.getDiamanten().intValue() > 0) {
-						gf = 2;
+						gf = 2.0;
 					}
 					txt40.setText(wog.berechnePunkte(gf).toString());
 				} else {

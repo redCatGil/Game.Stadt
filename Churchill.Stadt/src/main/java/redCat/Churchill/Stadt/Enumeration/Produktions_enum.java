@@ -6,5 +6,6 @@ public enum Produktions_enum {
 	Obstplantage,
 	Nutztiergehege,
 	Schmiede,
+	Schneiderei,
 	Metzgerei
 }
