@@ -149,7 +149,7 @@ public class Toolbox {
 		
 		case 5: return new Schneiderei();
 		
-		case 6: return new Metzgerei();
+		case 6: return new Ziegenzucht();
 		
 		case 7: return new Metzgerei();
 			
