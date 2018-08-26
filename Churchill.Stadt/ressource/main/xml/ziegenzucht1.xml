@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Ziegenzucht</comment>
+	<entry key="Name">Ziegenzucht</entry>
+	<entry key="Zeitalter">Eisenzeit</entry>
+	<entry key="Muenzen">4800</entry>
+	<entry key="Werkzeug">680</entry>
+	<entry key="Personen">122</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">4</entry>
+	<entry key="Breite">5</entry>
+	<entry key="Bauzeit">6000</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">40</entry>
+	<entry key="15_min">90</entry>
+	<entry key="1_h">220</entry>
+	<entry key="4_h">360</entry>
+	<entry key="8_h">540</entry>
+	<entry key="1_t">180</entry>
+	<entry key="Name_5_min">Ein Sechstel eines Käserades</entry>
+	<entry key="Name_15_min">Ein Drittel eines Käserades</entry>
+	<entry key="Name_1_h">Ein halbes Käserad</entry>
+	<entry key="Name_4_h">Zwei Drittel eines Käserades</entry>
+	<entry key="Name_8_h">Fünf Sechstel eines Käserades</entry>
+	<entry key="Name_1_t">Ein ganzes Käserad</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>
