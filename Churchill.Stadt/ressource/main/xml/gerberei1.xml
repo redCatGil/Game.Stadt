@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Gerberei</comment>
+	<entry key="Name">Gerberei</entry>
+	<entry key="Zeitalter">Fruehes_Mittelalter</entry>
+	<entry key="Muenzen">7020</entry>
+	<entry key="Werkzeug">1620</entry>
+	<entry key="Personen">54</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">3</entry>
+	<entry key="Bauzeit">10800</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">30</entry>
+	<entry key="15_min">70</entry>
+	<entry key="1_h">160</entry>
+	<entry key="4_h">270</entry>
+	<entry key="8_h">410</entry>
+	<entry key="1_t">810</entry>
+	<entry key="Name_5_min">Ziegenfell</entry>
+	<entry key="Name_15_min">Schweinehaut</entry>
+	<entry key="Name_1_h">Wildfell</entry>
+	<entry key="Name_4_h">Hasenfell</entry>
+	<entry key="Name_8_h">Waschbärpelz</entry>
+	<entry key="Name_1_t">Bärenhaut</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>

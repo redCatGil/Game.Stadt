@@ -8,5 +8,6 @@ public enum Produktions_enum {
 	Schmiede,
 	Schneiderei,
 	Ziegenzucht,
-	Metzgerei
+	Metzgerei,
+	Gerberei
 }

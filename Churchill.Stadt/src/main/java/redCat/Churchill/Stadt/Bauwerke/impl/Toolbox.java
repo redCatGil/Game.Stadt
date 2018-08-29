@@ -152,6 +152,8 @@ public class Toolbox {
 		case 6: return new Ziegenzucht();
 		
 		case 7: return new Metzgerei();
+		
+		case 8: return new Gerberei();
 			
 		default: return null;
 		}
