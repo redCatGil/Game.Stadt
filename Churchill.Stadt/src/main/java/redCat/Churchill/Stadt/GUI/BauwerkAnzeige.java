@@ -124,6 +124,16 @@ public class BauwerkAnzeige {
 		});
 		mntmAnzeige.setText("Anzeige");
 		
+		MenuItem mntmBerechnen = new MenuItem(menu_3, SWT.NONE);
+		mntmBerechnen.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				ProduktionsgebaeudeRechnen windowProdRechnen = new ProduktionsgebaeudeRechnen(shlBauwerksanzeige, SWT.APPLICATION_MODAL);
+				windowProdRechnen.open();
+			}
+		});
+		mntmBerechnen.setText("Berechnen");
+		
 		ExpandBar expandBar = new ExpandBar(shlBauwerksanzeige, SWT.NONE);
 		expandBar.setBounds(10, 131, 526, 132);
 		
