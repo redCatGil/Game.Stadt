@@ -308,7 +308,7 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	}
 
 	public Integer berechneProduktion(Integer produktion, Integer faktor) {
-		double fak = faktor / 100;
+		double fak = faktor / 100.0;
 		double prod = produktion * fak + 0.5;
 		return new Integer((int) prod);
 	}

@@ -39,7 +39,7 @@ public interface Wohngebaeude_api {
 	 * @param faktor - double-Wert der zu 1 addiert wird
 	 * @return Integer - modifizierter Ertragswert
 	 */
-	Integer getModEinnahmen(double faktor);
+	Integer getModEinnahmen(int faktor);
 
 	/**
 	 * Diese Funktion berechnet die erwirtschaftete M�nzmenge zu einer bestimmten Zeiteinheit. Hierzu wird die vorgegebene Zeit ins Verh�ltnis

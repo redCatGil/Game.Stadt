@@ -154,6 +154,8 @@ public class Toolbox {
 		case 7: return new Metzgerei();
 		
 		case 8: return new Gerberei();
+		
+		case 9: return new Baeckerei();
 			
 		default: return null;
 		}

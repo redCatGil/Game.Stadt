@@ -36,6 +36,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 	private Text txt4h;
 	private Text txt8h;
 	private Text txt1t;
+	private Text txtPunkte;
 
 	/**
 	 * Create the dialog.
@@ -70,7 +71,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 	private void createContents() {
 		shlProduktionsgebaeudeAnzeige = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.MIN);
 		shlProduktionsgebaeudeAnzeige.setModified(true);
-		shlProduktionsgebaeudeAnzeige.setSize(611, 582);
+		shlProduktionsgebaeudeAnzeige.setSize(611, 685);
 		shlProduktionsgebaeudeAnzeige.setText("Anzeige von Produktionsgeb\u00E4uden");
 		
 		//Comboboxen definieren und mit enum-Werten füllen
@@ -90,7 +91,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 		});
 		btnBeenden.setToolTipText("hiermit wird das Fenster geschlossen");
 		btnBeenden.setText("Beenden");
-		btnBeenden.setBounds(530, 518, 75, 25);
+		btnBeenden.setBounds(520, 621, 75, 25);
 		
 		//Combobox-Listener1
 		cbProduktion1.addSelectionListener(new SelectionAdapter() {
@@ -99,6 +100,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 				System.out.println("Auswahl: " + cbProduktion1.getSelectionIndex());
 				if (cbProduktion1.getSelectionIndex() > -1) {
 					Produktionsgebaeude prod = Toolbox.ProdAuswahl(cbProduktion1.getSelectionIndex());
+					double gf = 1.0;
 					txtName1.setText(prod.getName());
 					txtZA1.setText(prod.getZeitalter());
 					txtMuenzen1.setText(prod.getMuenzen().toString());
@@ -113,6 +115,10 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 					txt4h.setText(prod.getIn_4_Stunden().toString() + " - " + prod.getName_4_h());
 					txt8h.setText(prod.getIn_8_Stunden().toString() + " - " + prod.getName_8_h());
 					txt1t.setText(prod.getIn_1_Tag().toString() + " - " + prod.getName_1_t());
+					if (prod.getGebaeude_art().equalsIgnoreCase("diamant")) {
+						gf = 2.0;
+					}
+					txtPunkte.setText("" + prod.berechnePunkte(gf));
 				}
 			}
 		});
@@ -235,6 +241,19 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 		txt1t = new Text(shlProduktionsgebaeudeAnzeige, SWT.BORDER);
 		txt1t.setEditable(false);
 		txt1t.setBounds(90, 497, 130, 21);
+		
+		Label lbStatistik = new Label(shlProduktionsgebaeudeAnzeige, SWT.NONE);
+		lbStatistik.setText("Statistik");
+		lbStatistik.setAlignment(SWT.CENTER);
+		lbStatistik.setBounds(10, 551, 228, 15);
+		
+		Label lbPunkte = new Label(shlProduktionsgebaeudeAnzeige, SWT.NONE);
+		lbPunkte.setText("Punkte:");
+		lbPunkte.setBounds(10, 581, 75, 15);
+		
+		txtPunkte = new Text(shlProduktionsgebaeudeAnzeige, SWT.BORDER);
+		txtPunkte.setEditable(false);
+		txtPunkte.setBounds(90, 575, 130, 21);
 
 	}
 

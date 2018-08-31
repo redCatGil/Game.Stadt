@@ -63,6 +63,9 @@ public class WohngebaeudeBerechnen extends Dialog {
 	private final int SCALEMAX = 10;
 	private Text txtPAnzahl;
 	private Label lbHaeuser;
+	private Label lbFaktor;
+	private Text txtFaktor;
+	private Label lbErgebnisMuenzen;
 
 	/**
 	 * Create the dialog.
@@ -96,7 +99,7 @@ public class WohngebaeudeBerechnen extends Dialog {
 	 */
 	private void createContents() {
 		shlHausRechnen = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.MIN);
-		shlHausRechnen.setSize(665, 545);
+		shlHausRechnen.setSize(665, 600);
 		shlHausRechnen.setText("Berechnungen f\u00FCr Wohnh\u00E4user");
 		
 		final Combo cbAus = new Combo(shlHausRechnen, SWT.NONE);
@@ -121,6 +124,7 @@ public class WohngebaeudeBerechnen extends Dialog {
 					scaleAnzahl.setEnabled(true);
 					txtAnzahl.setEditable(true);
 					txtPAnzahl.setEditable(true);
+					txtFaktor.setEditable(true);
 					
 				}
 			}
@@ -138,7 +142,7 @@ public class WohngebaeudeBerechnen extends Dialog {
 				shlHausRechnen.close();
 			}
 		});
-		btnBeenden.setBounds(560, 461, 75, 25);
+		btnBeenden.setBounds(574, 536, 75, 25);
 		btnBeenden.setText("Beenden");
 		
 		Label lb1 = new Label(shlHausRechnen, SWT.NONE);
@@ -482,6 +486,30 @@ public class WohngebaeudeBerechnen extends Dialog {
 		lbHaeuser = new Label(shlHausRechnen, SWT.NONE);
 		lbHaeuser.setText("x");
 		lbHaeuser.setBounds(292, 427, 131, 15);
+		
+		lbFaktor = new Label(shlHausRechnen, SWT.NONE);
+		lbFaktor.setText("Faktor Münzproduktion:");
+		lbFaktor.setBounds(29, 480, 147, 15);
+		
+		txtFaktor = new Text(shlHausRechnen, SWT.BORDER);
+		txtFaktor.addModifyListener(new ModifyListener() {
+			public void modifyText(ModifyEvent e) {
+				if (cbAus.getSelectionIndex() > -1) {
+					int faktor = 100 + new Integer(txtFaktor.getText()).intValue();
+					System.out.println("faktor:" + faktor);
+					Wohngebaeude_api wog = Toolbox.WogAuswahl(cbAus.getSelectionIndex());
+					lbErgebnisMuenzen.setText("" + wog.getModEinnahmen(faktor) + " Münzen");
+				}
+			}
+		});
+		txtFaktor.setText("");
+		txtFaktor.setEnabled(true);
+		txtFaktor.setEditable(false);
+		txtFaktor.setBounds(182, 474, 79, 21);
+		
+		lbErgebnisMuenzen = new Label(shlHausRechnen, SWT.NONE);
+		lbErgebnisMuenzen.setText("x");
+		lbErgebnisMuenzen.setBounds(292, 480, 131, 15);
 		
 
 	}

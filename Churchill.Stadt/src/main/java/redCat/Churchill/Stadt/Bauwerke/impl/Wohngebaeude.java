@@ -188,11 +188,12 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	 * @param faktor - double-Wert der zu 1 addiert wird
 	 * @return Integer - modifizierter Ertragswert
 	 */
-	public Integer getModEinnahmen(double faktor) { 
-		double fak = 1 + faktor;
-		Double erg = new Double(this.getMuenz_einnahmen() * fak + 0.5);
-		// System.out.println("Original: " + this.getMuenz_einnahmen() + " Modi: " + faktor + " neuer Wert: " + new Integer(erg.intValue()));
-		return new Integer(erg.intValue());
+	public Integer getModEinnahmen(int faktor) { 
+		double fak = faktor / 100.0;
+		double erg = this.getMuenz_einnahmen() * fak + 0.5;
+//		System.out.println("Faktor: " + fak + " neuer Wert: " + erg);
+//		System.out.println("Original: " + this.getMuenz_einnahmen() + " Modi: " + faktor + " neuer Wert: " + erg);
+		return new Integer("" + (int) erg);
 	}
 	
 	/**
