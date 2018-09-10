@@ -37,6 +37,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 	private Text txt8h;
 	private Text txt1t;
 	private Text txtPunkte;
+	private Text txtQuotient;
 
 	/**
 	 * Create the dialog.
@@ -119,6 +120,7 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 						gf = 2.0;
 					}
 					txtPunkte.setText("" + prod.berechnePunkte(gf));
+					txtQuotient.setText(prod.berechneWZQuotient().toString());
 				}
 			}
 		});
@@ -254,6 +256,14 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 		txtPunkte = new Text(shlProduktionsgebaeudeAnzeige, SWT.BORDER);
 		txtPunkte.setEditable(false);
 		txtPunkte.setBounds(90, 575, 130, 21);
+		
+		Label lbQuotien = new Label(shlProduktionsgebaeudeAnzeige, SWT.NONE);
+		lbQuotien.setText("WZ-Quotient:");
+		lbQuotien.setBounds(10, 614, 75, 15);
+		
+		txtQuotient = new Text(shlProduktionsgebaeudeAnzeige, SWT.BORDER);
+		txtQuotient.setEditable(false);
+		txtQuotient.setBounds(90, 608, 130, 21);
 
 	}
 

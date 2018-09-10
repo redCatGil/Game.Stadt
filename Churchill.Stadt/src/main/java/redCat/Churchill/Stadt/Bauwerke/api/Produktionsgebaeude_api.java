@@ -133,6 +133,18 @@ public interface Produktionsgebaeude_api {
 	void setGebaeude_art(String gebaeude_art);
 	
 	
+	/**
+	 * 
+	 * @param produktion as Basis
+	 * @param faktor as Faktor zur Gewichtung
+	 * @return gewichtete Produktion
+	 */
 	Integer berechneProduktion(Integer produktion, Integer faktor);
+	
+	/**
+	 * 
+	 * @return Werkzeug_Quotient 
+	 */
+	Double berechneWZQuotient( );
 
 }

@@ -312,6 +312,18 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		double prod = produktion * fak + 0.5;
 		return new Integer((int) prod);
 	}
+	
+	/**
+	 * Die Funktion berechnet die Werkzeugmenge die eine Einstundenproduktion herstellt, in Bezug auf die Fläche.
+	 * Es wird auf zwei Nachkommastellen gerundet.
+	 */
+	public Double berechneWZQuotient( ) {
+		int flaeche = this.getLaenge().intValue() * this.getBreite().intValue();
+		double quotient = this.in_1_Stunde.doubleValue() / flaeche;
+		quotient = Math.rint(quotient * 100) / 100; 
+		System.out.println("Fläche: " + flaeche + " Quotient: " + quotient);
+		return new Double(quotient);
+	}
 
 	
 	
