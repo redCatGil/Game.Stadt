@@ -156,6 +156,10 @@ public class Toolbox {
 		case 8: return new Gerberei();
 		
 		case 9: return new Baeckerei();
+		
+		case 10: return new Windmuehle();
+		
+		case 11: return new Alchemistenlabor();
 			
 		default: return null;
 		}

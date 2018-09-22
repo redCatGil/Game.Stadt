@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Alchemistenlabor</comment>
+	<entry key="Name">Alchemistenlabor</entry>
+	<entry key="Zeitalter">Hochmittelalter</entry>
+	<entry key="Muenzen">13950</entry>
+	<entry key="Werkzeug">2883</entry>
+	<entry key="Personen">40</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">19200</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">30</entry>
+	<entry key="15_min">80</entry>
+	<entry key="1_h">180</entry>
+	<entry key="4_h">310</entry>
+	<entry key="8_h">460</entry>
+	<entry key="1_t">920</entry>
+	<entry key="Name_5_min">Mörser</entry>
+	<entry key="Name_15_min">Gift</entry>
+	<entry key="Name_1_h">Elexir</entry>
+	<entry key="Name_4_h">Reagenzien</entry>
+	<entry key="Name_8_h">Tränke</entry>
+	<entry key="Name_1_t">Salpeter</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>

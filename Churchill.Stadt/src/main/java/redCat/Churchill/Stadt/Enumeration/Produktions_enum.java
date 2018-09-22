@@ -10,5 +10,7 @@ public enum Produktions_enum {
 	Ziegenzucht,
 	Metzgerei,
 	Gerberei,
-	Bäckerei
+	Bäckerei,
+	Windmühle,
+	Alchemistenlabor
 }
