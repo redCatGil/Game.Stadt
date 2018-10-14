@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Gewürzhandlung</comment>
+	<entry key="Name">Gewürzhandlung</entry>
+	<entry key="Zeitalter">Spaetes_Mittelalter</entry>
+	<entry key="Muenzen">0</entry>
+	<entry key="Werkzeug">0</entry>
+	<entry key="Personen">86</entry>
+	<entry key="Diamanten">500</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">3</entry>
+	<entry key="Bauzeit">20</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">120</entry>
+	<entry key="15_min">310</entry>
+	<entry key="1_h">730</entry>
+	<entry key="4_h">1220</entry>
+	<entry key="8_h">1830</entry>
+	<entry key="1_t">3660</entry>
+	<entry key="Name_5_min">Zimt</entry>
+	<entry key="Name_15_min">Chilli</entry>
+	<entry key="Name_1_h">Ingwwer</entry>
+	<entry key="Name_4_h">Pfeffer</entry>
+	<entry key="Name_8_h">Muskantnuss</entry>
+	<entry key="Name_1_t">Nelke</entry>
+	<entry key="Geb_Art">Diamant</entry>
+</properties>
