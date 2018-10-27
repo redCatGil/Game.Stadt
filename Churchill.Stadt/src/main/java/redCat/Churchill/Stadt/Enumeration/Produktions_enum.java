@@ -12,5 +12,6 @@ public enum Produktions_enum {
 	Gerberei,
 	Bäckerei,
 	Windmühle,
-	Alchemistenlabor
+	Alchemistenlabor,
+	Gewürzhandlung
 }

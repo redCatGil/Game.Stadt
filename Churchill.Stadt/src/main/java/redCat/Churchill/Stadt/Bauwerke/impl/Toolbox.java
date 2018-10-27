@@ -160,6 +160,8 @@ public class Toolbox {
 		case 10: return new Windmuehle();
 		
 		case 11: return new Alchemistenlabor();
+		
+		case 12: return new Gewuerzhandlung();
 			
 		default: return null;
 		}
