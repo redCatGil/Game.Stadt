@@ -134,6 +134,22 @@ public class BauwerkAnzeige {
 		});
 		mntmBerechnen.setText("Berechnen");
 		
+		MenuItem mGueter = new MenuItem(menu, SWT.CASCADE);
+		mGueter.setText("Güter");
+		
+		Menu menu_4 = new Menu(mGueter);
+		mGueter.setMenu(menu_4);
+		
+		MenuItem mntmGueterAnzeige = new MenuItem(menu_4, SWT.NONE);
+		mntmGueterAnzeige.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				GuetergebaeudeAnzeigen windowGeuterAnzeigen = new GuetergebaeudeAnzeigen(shlBauwerksanzeige, SWT.APPLICATION_MODAL);
+				windowGeuterAnzeigen.open();
+			}
+		});
+		mntmGueterAnzeige.setText("Anzeigen");
+		
 		ExpandBar expandBar = new ExpandBar(shlBauwerksanzeige, SWT.NONE);
 		expandBar.setBounds(10, 131, 526, 132);
 		

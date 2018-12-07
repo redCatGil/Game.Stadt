@@ -165,21 +165,21 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	 * Set-Methoden für 4-Stunden-Produktion - aufgeteilt in einzelne Attribute 
 	 */
 	
-	public void setIn4StundenName(String name) {
-		this.in4Stunden.setProdName(name);
-	}
-	
-	public void setIn4StundenMuenzen(Integer muenzen) {
-		this.in4Stunden.setProdMuenzen(muenzen);
-	}
-	
-	public void setIn4StundenWZ(Integer wz) {
-		this.in4Stunden.setProdWZ(wz);
-	}
-	
-	public void setIn4StundenMenge(Integer menge) {
-		this.in4Stunden.setProdMenge(menge);
-	}
+//	public void setIn4StundenName(String name) {
+//		this.in4Stunden.setProdName(name);
+//	}
+//	
+//	public void setIn4StundenMuenzen(Integer muenzen) {
+//		this.in4Stunden.setProdMuenzen(muenzen);
+//	}
+//	
+//	public void setIn4StundenWZ(Integer wz) {
+//		this.in4Stunden.setProdWZ(wz);
+//	}
+//	
+//	public void setIn4StundenMenge(Integer menge) {
+//		this.in4Stunden.setProdMenge(menge);
+//	}
 	
 	/*  
 	 * Get-Methoden für 8-Stunden-Produktion - aufgeteilt in einzelne Attribute 
@@ -205,21 +205,21 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	 * Set-Methoden für 8-Stunden-Produktion - aufgeteilt in einzelne Attribute 
 	 */
 	
-	public void setIn8StundenName(String name) {
-		this.in8Stunden.setProdName(name);
-	}
-	
-	public void setIn8StundenMuenzen(Integer muenzen) {
-		this.in8Stunden.setProdMuenzen(muenzen);
-	}
-	
-	public void setIn8StundenWZ(Integer wz) {
-		this.in8Stunden.setProdWZ(wz);
-	}
-	
-	public void setIn8StundenMenge(Integer menge) {
-		this.in8Stunden.setProdMenge(menge);
-	}
+//	public void setIn8StundenName(String name) {
+//		this.in8Stunden.setProdName(name);
+//	}
+//	
+//	public void setIn8StundenMuenzen(Integer muenzen) {
+//		this.in8Stunden.setProdMuenzen(muenzen);
+//	}
+//	
+//	public void setIn8StundenWZ(Integer wz) {
+//		this.in8Stunden.setProdWZ(wz);
+//	}
+//	
+//	public void setIn8StundenMenge(Integer menge) {
+//		this.in8Stunden.setProdMenge(menge);
+//	}
 	
 	/*  
 	 * Get-Methoden für 1-Tag-Produktion - aufgeteilt in einzelne Attribute 
@@ -245,21 +245,21 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	 * Set-Methoden für 1-Tag-Produktion - aufgeteilt in einzelne Attribute 
 	 */
 	
-	public void setIn1TagName(String name) {
-		this.in1Tag.setProdName(name);
-	}
-	
-	public void setIn1TagMuenzen(Integer muenzen) {
-		this.in1Tag.setProdMuenzen(muenzen);
-	}
-	
-	public void setIn1TagWZ(Integer wz) {
-		this.in1Tag.setProdWZ(wz);
-	}
-	
-	public void setIn1TagMenge(Integer menge) {
-		this.in1Tag.setProdMenge(menge);
-	}
+//	public void setIn1TagName(String name) {
+//		this.in1Tag.setProdName(name);
+//	}
+//	
+//	public void setIn1TagMuenzen(Integer muenzen) {
+//		this.in1Tag.setProdMuenzen(muenzen);
+//	}
+//	
+//	public void setIn1TagWZ(Integer wz) {
+//		this.in1Tag.setProdWZ(wz);
+//	}
+//	
+//	public void setIn1TagMenge(Integer menge) {
+//		this.in1Tag.setProdMenge(menge);
+//	}
 	
 	/*  
 	 * Get-Methoden für 2-Tag-Produktion - aufgeteilt in einzelne Attribute 
@@ -280,31 +280,36 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	public Integer getIn2TagenMenge() {
 		return in2Tagen.getProdMenge();
 	}
+
+	public String getGebaeude_art() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	/*  
 	 * Set-Methoden für 2-Tagen-Produktion - aufgeteilt in einzelne Attribute 
 	 */
 	
-	public void setIn2TagenName(String name) {
-		this.in2Tagen.setProdName(name);
-	}
-	
-	public void setIn2TagenMuenzen(Integer muenzen) {
-		this.in2Tagen.setProdMuenzen(muenzen);
-	}
-	
-	public void setIn2TagenWZ(Integer wz) {
-		this.in2Tagen.setProdWZ(wz);
-	}
-	
-	public void setIn2TagenMenge(Integer menge) {
-		this.in2Tagen.setProdMenge(menge);
-	}
-
-	public String getGebaeude_art() {
-		return gebaeude_art;
-	}
-
+//	public void setIn2TagenName(String name) {
+//		this.in2Tagen.setProdName(name);
+//	}
+//	
+//	public void setIn2TagenMuenzen(Integer muenzen) {
+//		this.in2Tagen.setProdMuenzen(muenzen);
+//	}
+//	
+//	public void setIn2TagenWZ(Integer wz) {
+//		this.in2Tagen.setProdWZ(wz);
+//	}
+//	
+//	public void setIn2TagenMenge(Integer menge) {
+//		this.in2Tagen.setProdMenge(menge);
+//	}
+//
+//	public String getGebaeude_art() {
+//		return gebaeude_art;
+//	}
+//
 	public void setGebaeude_art(String gebaeude_art) {
 		this.gebaeude_art = gebaeude_art;
 	}

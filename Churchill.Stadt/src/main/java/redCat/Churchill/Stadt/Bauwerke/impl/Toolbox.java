@@ -167,5 +167,13 @@ public class Toolbox {
 		}
 		
 	}
+	
+	public static Guetergebaeude GueterAuswahl(int gueter) {
+		switch (gueter) {
+		case 0: return new Saegemuehle();
+		
+		default: return null;
+		}
+	}
 
 }

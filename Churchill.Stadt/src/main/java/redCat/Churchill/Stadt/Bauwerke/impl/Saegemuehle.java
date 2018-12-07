@@ -57,22 +57,37 @@ public class Saegemuehle extends Guetergebaeude {
 		
 		this.setProdukt(props.getProperty("Produkt"));
 		this.setMaterial(props.getProperty("Material"));
-		this.setIn4StundenName(props.getProperty("4hName"));
-		this.setIn4StundenMenge(new Integer(props.getProperty("4hMenge")));
-		this.setIn4StundenMuenzen(new Integer(props.getProperty("4hMuenzen")));
-		this.setIn4StundenWZ(new Integer(props.getProperty("4hWz")));
-		this.setIn8StundenName(props.getProperty("8hName"));
-		this.setIn8StundenMenge(new Integer(props.getProperty("8hMenge")));
-		this.setIn8StundenMuenzen(new Integer(props.getProperty("8hMuenzen")));
-		this.setIn8StundenWZ(new Integer(props.getProperty("8hWz")));
-		this.setIn1TagName(props.getProperty("1tName"));
-		this.setIn1TagMenge(new Integer(props.getProperty("1tMenge")));
-		this.setIn1TagMuenzen(new Integer(props.getProperty("1tMuenzen")));
-		this.setIn1TagWZ(new Integer(props.getProperty("1tWz")));
-		this.setIn2TagenName(props.getProperty("2tName"));
-		this.setIn2TagenMenge(new Integer(props.getProperty("2tMenge")));
-		this.setIn2TagenMuenzen(new Integer(props.getProperty("2tMuenzen")));
-		this.setIn2TagenWZ(new Integer(props.getProperty("2tWz")));
+		GueterProd gut;
+		System.out.println("Name 4h: "+ props.getProperty("4hName"));
+//		4 Stunden
+		gut = new GueterProd();
+		gut.setProdName(props.getProperty("4hName"));
+		gut.setProdMenge(new Integer(props.getProperty("4hMenge")));
+		gut.setProdMuenzen(new Integer(props.getProperty("4hMuenzen")));
+		gut.setProdWZ(new Integer(props.getProperty("4hWZ")));
+		this.setIn4Stunden(gut);
+//		8 Stunden
+		gut = new GueterProd();
+		gut.setProdName(props.getProperty("8hName"));
+		gut.setProdMenge(new Integer(props.getProperty("8hMenge")));
+		gut.setProdMuenzen(new Integer(props.getProperty("8hMuenzen")));
+		gut.setProdWZ(new Integer(props.getProperty("8hWZ")));
+		this.setIn8Stunden(gut);
+//      1 Tag
+		gut = new GueterProd();
+		gut.setProdName(props.getProperty("1tName"));
+		gut.setProdMenge(new Integer(props.getProperty("1tMenge")));
+		gut.setProdMuenzen(new Integer(props.getProperty("1tMuenzen")));
+		gut.setProdWZ(new Integer(props.getProperty("1tWZ")));
+		this.setIn1Tag(gut);
+//		2 Tage
+		gut = new GueterProd();
+		gut.setProdName(props.getProperty("2tName"));
+		gut.setProdMenge(new Integer(props.getProperty("2tMenge")));
+		gut.setProdMuenzen(new Integer(props.getProperty("2tMuenzen")));
+		gut.setProdWZ(new Integer(props.getProperty("2tWZ")));
+		this.setIn2Tagen(gut);
+
 		this.setGebaeude_art(props.getProperty("Geb_Art"));
 		
 	}
