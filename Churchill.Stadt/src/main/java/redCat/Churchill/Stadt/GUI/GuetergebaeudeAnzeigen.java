@@ -8,11 +8,13 @@ import java.util.Iterator;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Combo;
-import org.eclipse.wb.swt.SWTResourceManager;
+
 
 import redCat.Churchill.Stadt.Bauwerke.impl.Guetergebaeude;
 import redCat.Churchill.Stadt.Bauwerke.impl.Toolbox;
 import redCat.Churchill.Stadt.Enumeration.Gueter_enum;
+import redCat.Churchill.Stadt.Tools.SWTResourceManager;
+
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -38,6 +40,17 @@ public class GuetergebaeudeAnzeigen extends Dialog {
 	private Text txt_8hErtrag;
 	private Text txt_1tErtrag;
 	private Text txt_2tErtrag;
+	private Label lb_txt1;
+	private Label lb_muenzen;
+	private Label lb_Werkzeug;
+	private Text txt_4hMuenzen;
+	private Text txt_4hWZ;
+	private Text txt_8hMuenzen;
+	private Text txt_8hWZ;
+	private Text txt_1tMuenzen;
+	private Text txt_1tWZ;
+	private Text txt_2tMuenzen;
+	private Text txt_2tWZ;
 
 	/**
 	 * Create the dialog.
@@ -93,6 +106,18 @@ public class GuetergebaeudeAnzeigen extends Dialog {
 					txt_8hName.setText(gut.getIn8StundenName());
 					txt_1tName.setText(gut.getIn1TagName());
 					txt_2tName.setText(gut.getIn2TagenName());
+					txt_4hErtrag.setText(gut.getIn4StundenMenge().toString() + " " + gut.getProdukt());
+					txt_8hErtrag.setText(gut.getIn8StundenMenge().toString() + " " + gut.getProdukt());
+					txt_1tErtrag.setText(gut.getIn1TagMenge().toString() + " " + gut.getProdukt());
+					txt_2tErtrag.setText(gut.getIn2TagenMenge().toString() + " " + gut.getProdukt());
+					txt_4hMuenzen.setText(gut.getIn4StundenMuenzen().toString());
+					txt_8hMuenzen.setText(gut.getIn8StundenMuenzen().toString());
+					txt_1tMuenzen.setText(gut.getIn1TagMuenzen().toString());
+					txt_2tMuenzen.setText(gut.getIn2TagenMuenzen().toString());
+					txt_4hWZ.setText(gut.getIn4StundenWZ().toString());
+					txt_8hWZ.setText(gut.getIn8StundenWZ().toString());
+					txt_1tWZ.setText(gut.getIn1TagWZ().toString());
+					txt_2tWZ.setText(gut.getIn2TagenWZ().toString());
 				}
 			}
 		});
@@ -221,6 +246,50 @@ public class GuetergebaeudeAnzeigen extends Dialog {
 		txt_2tErtrag = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
 		txt_2tErtrag.setEditable(false);
 		txt_2tErtrag.setBounds(635, 373, 145, 21);
+		
+		lb_txt1 = new Label(shlAnzeigeVonGtergebuden, SWT.RIGHT);
+		lb_txt1.setText("Kosten");
+		lb_txt1.setBounds(10, 411, 95, 18);
+		
+		lb_muenzen = new Label(shlAnzeigeVonGtergebuden, SWT.RIGHT);
+		lb_muenzen.setText("Münzen");
+		lb_muenzen.setBounds(10, 427, 95, 18);
+		
+		lb_Werkzeug = new Label(shlAnzeigeVonGtergebuden, SWT.RIGHT);
+		lb_Werkzeug.setText("Werkzeug");
+		lb_Werkzeug.setBounds(10, 454, 95, 18);
+		
+		txt_4hMuenzen = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_4hMuenzen.setEditable(false);
+		txt_4hMuenzen.setBounds(111, 424, 145, 21);
+		
+		txt_4hWZ = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_4hWZ.setEditable(false);
+		txt_4hWZ.setBounds(111, 454, 145, 21);
+		
+		txt_8hMuenzen = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_8hMuenzen.setEditable(false);
+		txt_8hMuenzen.setBounds(279, 424, 145, 21);
+		
+		txt_8hWZ = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_8hWZ.setEditable(false);
+		txt_8hWZ.setBounds(279, 454, 145, 21);
+		
+		txt_1tMuenzen = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_1tMuenzen.setEditable(false);
+		txt_1tMuenzen.setBounds(455, 424, 145, 21);
+		
+		txt_1tWZ = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_1tWZ.setEditable(false);
+		txt_1tWZ.setBounds(455, 454, 145, 21);
+		
+		txt_2tMuenzen = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_2tMuenzen.setEditable(false);
+		txt_2tMuenzen.setBounds(635, 427, 145, 21);
+		
+		txt_2tWZ = new Text(shlAnzeigeVonGtergebuden, SWT.BORDER);
+		txt_2tWZ.setEditable(false);
+		txt_2tWZ.setBounds(635, 454, 145, 21);
 		
 		for (Gueter_enum gueter : Gueter_enum.values()) {
 			cbGueter1.add(gueter.toString());
