@@ -282,8 +282,7 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	}
 
 	public String getGebaeude_art() {
-		// TODO Auto-generated method stub
-		return null;
+		return gebaeude_art;
 	}
 	
 	/*  

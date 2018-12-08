@@ -14,6 +14,7 @@
 	<entry key="Strasse">true</entry>
 	<entry key="Produkt">Stein</entry>
 	<entry key="Material">Fels</entry>
+	<entry key="Geb_Art">Normal</entry>
 	<entry key="4hName">Kleiner Stein</entry>
 	<entry key="4hMenge">5</entry>
 	<entry key="4hMuenzen">100</entry>

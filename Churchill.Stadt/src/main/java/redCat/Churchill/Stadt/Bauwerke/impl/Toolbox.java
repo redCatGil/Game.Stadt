@@ -171,6 +171,7 @@ public class Toolbox {
 	public static Guetergebaeude GueterAuswahl(int gueter) {
 		switch (gueter) {
 		case 0: return new Saegemuehle();
+		case 1: return new Steinmetz();
 		
 		default: return null;
 		}
