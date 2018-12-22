@@ -4,7 +4,7 @@ public enum Gueter_enum {
 	Weingut,
 	Sägemühle,
 	Steinmetz,
-	dummy,
+	Färberei,
 	Marmorsteinmetz
 
 }

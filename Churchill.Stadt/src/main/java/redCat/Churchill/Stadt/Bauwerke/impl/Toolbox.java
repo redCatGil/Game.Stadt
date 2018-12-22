@@ -173,6 +173,7 @@ public class Toolbox {
 		case 0: return new Weingut();
 		case 1: return new Saegemuehle();
 		case 2: return new Steinmetz();
+		case 3: return new Faerberei();
 		case 4: return new Marmorsteinmetz();
 		
 		default: return null;
