@@ -170,8 +170,10 @@ public class Toolbox {
 	
 	public static Guetergebaeude GueterAuswahl(int gueter) {
 		switch (gueter) {
-		case 0: return new Saegemuehle();
-		case 1: return new Steinmetz();
+		case 0: return new Weingut();
+		case 1: return new Saegemuehle();
+		case 2: return new Steinmetz();
+		case 4: return new Marmorsteinmetz();
 		
 		default: return null;
 		}

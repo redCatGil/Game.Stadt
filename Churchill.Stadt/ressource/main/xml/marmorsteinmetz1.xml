@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Marmor-Steinmetz</comment>
+	<entry key="Name">Marmor-Steinmetz</entry>
+	<entry key="Zeitalter">Bronzezeit</entry>
+	<entry key="Muenzen">232</entry>
+	<entry key="Werkzeug">465</entry>
+	<entry key="Personen">108</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">3</entry>
+	<entry key="Bauzeit">1800</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Produkt">Marmor</entry>
+	<entry key="Material">Marmorgestein</entry>
+	<entry key="4hName">Gehauener Marmor</entry>
+	<entry key="4hMenge">5</entry>
+	<entry key="4hMuenzen">100</entry>
+	<entry key="4hWZ">100</entry>
+	<entry key="8hName">Büste</entry>
+	<entry key="8hMenge">10</entry>
+	<entry key="8hMuenzen">200</entry>
+	<entry key="8hWZ">200</entry>
+	<entry key="1tName">Plumpe Skulptur</entry>
+	<entry key="1tMenge">20</entry>
+	<entry key="1tMuenzen">400</entry>
+	<entry key="1tWZ">400</entry>
+	<entry key="2tName">Exotische Büste</entry>
+	<entry key="2tMenge">30</entry>
+	<entry key="2tMuenzen">600</entry>
+	<entry key="2tWZ">600</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>
