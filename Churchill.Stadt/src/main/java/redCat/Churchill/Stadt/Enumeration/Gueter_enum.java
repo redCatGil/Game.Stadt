@@ -5,6 +5,8 @@ public enum Gueter_enum {
 	Sägemühle,
 	Steinmetz,
 	Färberei,
-	Marmorsteinmetz
+	Marmorsteinmetz,
+	Weberei,
+	Kalksteinmetz
 
 }

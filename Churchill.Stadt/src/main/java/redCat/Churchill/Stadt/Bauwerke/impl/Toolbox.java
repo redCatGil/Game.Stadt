@@ -175,6 +175,8 @@ public class Toolbox {
 		case 2: return new Steinmetz();
 		case 3: return new Faerberei();
 		case 4: return new Marmorsteinmetz();
+		case 5: return new Weberei();
+		case 6: return new Kalksteinmetz();
 		
 		default: return null;
 		}

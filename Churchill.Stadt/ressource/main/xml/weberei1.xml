@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Weberei</comment>
+	<entry key="Name">Weberei</entry>
+	<entry key="Zeitalter">Eisenzeit</entry>
+	<entry key="Muenzen">1500</entry>
+	<entry key="Werkzeug">2400</entry>
+	<entry key="Personen">230</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">4</entry>
+	<entry key="Breite">3</entry>
+	<entry key="Bauzeit">5400</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="Produkt">Stoff</entry>
+	<entry key="Material">Wolle</entry>
+	<entry key="4hName">Einfacher Stoff</entry>
+	<entry key="4hMenge">5</entry>
+	<entry key="4hMuenzen">200</entry>
+	<entry key="4hWZ">200</entry>
+	<entry key="8hName">Normaler Stoff</entry>
+	<entry key="8hMenge">10</entry>
+	<entry key="8hMuenzen">400</entry>
+	<entry key="8hWZ">400</entry>
+	<entry key="1tName">Feiner Stoff</entry>
+	<entry key="1tMenge">20</entry>
+	<entry key="1tMuenzen">800</entry>
+	<entry key="1tWZ">800</entry>
+	<entry key="2tName">Hervorragender Stoff</entry>
+	<entry key="2tMenge">30</entry>
+	<entry key="2tMuenzen">1200</entry>
+	<entry key="2tWZ">1200</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>

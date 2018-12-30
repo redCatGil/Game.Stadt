@@ -8,11 +8,11 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Combo;
-import org.eclipse.wb.swt.SWTResourceManager;
 
 import redCat.Churchill.Stadt.Bauwerke.impl.Produktionsgebaeude;
 import redCat.Churchill.Stadt.Bauwerke.impl.Toolbox;
 import redCat.Churchill.Stadt.Enumeration.Produktions_enum;
+import redCat.Churchill.Stadt.Tools.SWTResourceManager;
 
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
