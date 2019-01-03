@@ -37,38 +37,56 @@ public class Gebaeude implements Gebaeude_api {
 	}
 	
 	/**
+	 * Konstruktor für einige Attribute:
+	 * 
+	 * @param name
+	 * @param zeitalter
+	 * @param muenzen
+	 * @param werkzeug
+	 * @param personen
+	 * @param diamanten
+	 * @param laenge
+	 * @param breite
+	 * @param strasse
+	 */
+	public Gebaeude(String name, String zeitalter, int muenzen, int werkzeug, int personen, int diamanten, int laenge, int breite,
+			boolean strasse) {
+		
+		this.setName(name);
+		this.setZeitalter(zeitalter);
+		this.setMuenzen(new Integer(muenzen));
+		this.setWerkzeug(new Integer(werkzeug));
+		this.setPersonen(new Integer(personen));
+		this.setDiamanten(new Integer(diamanten));
+		this.setLaenge(new Integer(laenge));
+		this.setBreite(new Integer(breite));
+		this.setStrasse_benoetigt(strasse);
+		
+	}
+	
+	/**
 	 * Konstruktor, der int statt der Wrapperklasse Integer bzw. Kalender benutzt
 	 * 
-	 * @param name 			 - Name des Geb�udes
+	 * @param name 			 - Name des Gebäudes
 	 * @param zeitalter		 - Zeitalter als String
-	 * @param muenzen		 - Anzahl M�nzen die zur Erstellung ben�tigt werden
-	 * @param werkzeug		 - Anzahl Werkzeug die zur Erstellung ben�tigt werden
-	 * @param personen		 - Anzahl der Personen die durch das Geb�ude gebunden werden
-	 * @param diamanten		 - Anzahl Diamanten die zur Erstellung ben�tigt werden
-	 * @param laenge		 - Grundfl�che des Geb�udes - L�ngenangabe
-	 * @param breite		 - Grundfl�che des Geb�udes - Breitenangabe
+	 * @param muenzen		 - Anzahl Münzen die zur Erstellung benötigt werden
+	 * @param werkzeug		 - Anzahl Werkzeug die zur Erstellung benötigt werden
+	 * @param personen		 - Anzahl der Personen die durch das Gebäude gebunden werden
+	 * @param diamanten		 - Anzahl Diamanten die zur Erstellung benätigt werden
+	 * @param laenge		 - Grundfläche des Gebäudes - Längenangabe
+	 * @param breite		 - Grundfläche des Gebäudes - Breitenangabe
 	 * @param zeit			 - Erstellungszeit
-	 * @param strasse		 - Wert ob das Geb�ude an einer Strasse stehen muss
+	 * @param strasse		 - Wert ob das Gebäude an einer Strasse stehen muss
+	 * 
+	 * Nur das Attribut "zeit" wird in diesem Konstruktor in ein GregorianCalendar-Objekt umgesetzt. 
+	 * Der Rest wird über den Konstruktor für einige Attribute übernommen.
 	 * 
 	 */
 	public Gebaeude(String name, String zeitalter, int muenzen, int werkzeug, int personen, int diamanten, int laenge, int breite,
 			int zeit, boolean strasse) {
-		this.name = name;
 		
-		try {
-			this.zeitalter = Zeitalter.valueOf(zeitalter).name();
-		} catch (IllegalArgumentException e) {
-			this.zeitalter = Zeitalter.UNBEKANNT.name();
-		}
-		
-		this.muenzen = new Integer(muenzen);
-		this.werkzeug = new Integer(werkzeug);
-		this.personen = new Integer(personen);
-		this.diamanten = new Integer(diamanten);
-		this.laenge = new Integer(laenge);
-		this.breite = new Integer(breite);
-		this.strasse_benoetigt = strasse;
-		
+		this(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, strasse);
+
 		GregorianCalendar cal = new GregorianCalendar();
 		cal.set(Calendar.HOUR_OF_DAY,Toolbox.ermittleStunden(zeit));
 		cal.set(Calendar.HOUR,Toolbox.ermittleStunden(zeit));
@@ -78,7 +96,7 @@ public class Gebaeude implements Gebaeude_api {
 		cal.set(Calendar.YEAR,2017);
 		cal.set(Calendar.MONTH,Calendar.JANUARY);
 		cal.set(Calendar.DAY_OF_MONTH,1);
-		this.bauzeit = cal;
+		this.setBauzeit(cal);
 		System.out.println("Bauzeit: " + this.bauzeit.toString());
 	}
 	
@@ -87,31 +105,25 @@ public class Gebaeude implements Gebaeude_api {
 	 * Im gegensatz zum obigen Konstruktor arbeitet dieser mit einem GregorianCalender als Bauzeit-Typ.
 	 * 
 	 * @param bauzeit                  - Erstellungszeit als GregorianCalender
-	 * @param breite                   - Grundfl�che des Geb�udes - Breitenangabe
-	 * @param diamanten                - Anzahl Diamanten die zur Erstellung ben�tigt werden
-	 * @param laenge                   - Grundfl�che des Geb�udes - L�ngenangabe
-	 * @param muenzen                  - Anzahl M�nzen die zur Erstellung ben�tigt werden
-	 * @param name                     - Name des Geb�udes
-	 * @param personen                 - Anzahl der Personen die durch das Geb�ude gebunden werden
-	 * @param strasse_benoetigt        - Wert ob das Geb�ude an einer Strasse stehen muss
-	 * @param werkzeug                 - Anzahl Werkzeug die zur Erstellung ben�tigt werden
+	 * @param breite                   - Grundfläche des Gebäudes - Breitenangabe
+	 * @param diamanten                - Anzahl Diamanten die zur Erstellung benätigt werden
+	 * @param laenge                   - Grundfläche des Gebäudes - Längenangabe
+	 * @param muenzen                  - Anzahl Münzen die zur Erstellung benötigt werden
+	 * @param name                     - Name des Gebäudes
+	 * @param personen                 - Anzahl der Personen die durch das Gebäude gebunden werden
+	 * @param strasse_benoetigt        - Wert ob das Gebäude an einer Strasse stehen muss
+	 * @param werkzeug                 - Anzahl Werkzeug die zur Erstellung benätigt werden
 	 * @param zeitalter                - Zeitalter als String
+	 * 
+	 * Nur das Attribut "bauzeit" wird in diesem Konstruktor übergeben. 
+	 * Der Rest wird über den Konstruktor für einige Attribute übernommen.
 	 */ 
-	public Gebaeude(GregorianCalendar bauzeit, Integer breite,
-			Integer diamanten, Integer laenge, Integer muenzen, String name,
-			Integer personen, boolean strasse_benoetigt, Integer werkzeug,
-			String zeitalter) {
-		super();
+	public Gebaeude(String name, String zeitalter, int muenzen, int werkzeug, int personen, int diamanten, int laenge, int breite,
+			GregorianCalendar bauzeit, boolean strasse_benoetigt) {
+		
+		this(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, strasse_benoetigt);
 		this.bauzeit = bauzeit;
-		this.breite = breite;
-		this.diamanten = diamanten;
-		this.laenge = laenge;
-		this.muenzen = muenzen;
-		this.name = name;
-		this.personen = personen;
-		this.strasse_benoetigt = strasse_benoetigt;
-		this.werkzeug = werkzeug;
-		this.zeitalter = zeitalter;
+
 	}
 
 	
@@ -125,7 +137,7 @@ public class Gebaeude implements Gebaeude_api {
 	//***************************** Name *************************************************************
 	
 	/**
-	 * Funktion gibt den Namen des Geb�udes zur�ck
+	 * Funktion gibt den Namen des Gebäudes zurück
 	 * @return the name als String
 	 */
 	public String getName() {
@@ -133,7 +145,7 @@ public class Gebaeude implements Gebaeude_api {
 	}
 	
 	/**
-	 * Funktion setzt den Names des Geb�udes auf den �bergebenen Wert
+	 * Funktion setzt den Names des Gebäudes auf den übergebenen Wert
 	 * @param name - String - the name to set
 	 */
 	public void setName(String name) {
@@ -151,9 +163,9 @@ public class Gebaeude implements Gebaeude_api {
 	}
 
 	/**
-	 * Funktion setzt das Zeitalter. Es wird dabei gepr�ft, ob der �bergebene Wert einem Wert aus der Aufz�hlung
-	 * entspricht. Wenn dies der Fall ist, wird der neue Wert �bernommen. 
-	 * <br>Im anderen Fall, bleibt der alte Wert erhalten.
+	 * Funktion setzt das Zeitalter. Es wird dabei geprüft, ob der übergebene Wert einem Wert aus der Aufzählung
+	 * entspricht. Wenn dies der Fall ist, wird der neue Wert übernommen. 
+	 * <br>Im anderen Fall - also wenn der Wert nicht gültig ist - wird UNBEKANNT gesetzt.
 	 * 
 	 * @param zeitalter - String - the zeitalter to set
 	 */
@@ -161,7 +173,7 @@ public class Gebaeude implements Gebaeude_api {
 		 try {
 			this.zeitalter = Zeitalter.valueOf(zeitalter).name();
 		} catch (IllegalArgumentException e) {
-			//nix wird gemacht
+			this.zeitalter = Zeitalter.UNBEKANNT.name();
 		}
 	}
 	
@@ -297,7 +309,7 @@ public class Gebaeude implements Gebaeude_api {
 	
 	/* ********************************************************************************************************************************
 	 *                                                                                                                                *
-	 *                         �berschriebene Funktionen und Methoden                                                                 *
+	 *                         überschriebene Funktionen und Methoden                                                                 *
 	 *                                                                                                                                *
 	 * ********************************************************************************************************************************                         	
 	 */

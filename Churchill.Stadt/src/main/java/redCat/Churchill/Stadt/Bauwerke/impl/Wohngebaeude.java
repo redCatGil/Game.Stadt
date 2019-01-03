@@ -21,77 +21,76 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	 */
 	
 	public Wohngebaeude() {
-		// TODO Auto-generated constructor stub
+		//leerer Konstruktor
 	}
 	
 
 	/**
-	 * Wohngeb�udekonstruktur
-	 * Dieser Konstruktor ruft die Erzeugung eines Ge�budes auf. Dabei werden zwei Werte mit Konstanten gef�llt:
-	 *   - die Anzahl der ben�tigten Personen mit 0
-	 *   - die Angabe, dass eine Stra�e ben�tigt wird mit true
+	 * Wohngebäudekonstruktur
+	 * Dieser Konstruktor ruft die Erzeugung eines Geäbudes auf. Dabei werden zwei Werte mit Konstanten gefüllt:
+	 *   - die Anzahl der benötigten Personen mit 0
+	 *   - die Angabe, dass eine Straße benötigt wird mit true
 	 * Beide Werte sind daher nicht mehr im Konstruktoraufruf enthalten!!
 	 * 
-	 * @param name           - Name des Geb�udes
+	 * @param name           - Name des Gebäudes
 	 * @param zeitalter      - Zeitalter als String
-	 * @param muenzen		 - Anzahl M�nzen die zur Erstellung ben�tigt werden
-	 * @param werkzeug	     - Anzahl Werkzeug die zur Erstellung ben�tigt werden
-	 * @param diamanten      - Anzahl Diamanten die zur Erstellung ben�tigt werden
-	 * @param laenge         - Grundfl�che des Geb�udes - Längenangabe 
-	 * @param breite         - Grundfl�che des Geb�udes - Breitenangabe
+	 * @param muenzen		 - Anzahl Münzen die zur Erstellung benötigt werden
+	 * @param werkzeug	     - Anzahl Werkzeug die zur Erstellung benötigt werden
+	 * @param diamanten      - Anzahl Diamanten die zur Erstellung benötigt werden
+	 * @param laenge         - Grundfl�che des Gebäudes - Längenangabe 
+	 * @param breite         - Grundfl�che des Gebäudes - Breitenangabe
 	 * @param zeit           - Erstellungszeit als int-Wert in Sekunden
 	 * @param bewohner		 - Anzahl der Bewohnter die hinzugewonnen werden
-	 * @param einnahmen		 - Anzahl der M�nzeinnahmen 
-	 * @param einnahme_dauer - Zeit die gebraucht wird, um die M�nzeinnahmen zu generieren in Sekunden
+	 * @param einnahmen		 - Anzahl der Münzeinnahmen 
+	 * @param einnahme_dauer - Zeit die gebraucht wird, um die Münzeinnahmen zu generieren in Sekunden
 	 */
 	public Wohngebaeude(String name, String zeitalter, int muenzen,
 			int werkzeug, int diamanten, int laenge, int breite,
 			int zeit, int bewohner, int einnahmen, int einnahme_dauer) {
 		
-		//aufruf des �bergeordneten Konstruktors
+		//aufruf des übergeordneten Konstruktors
 		super(name, zeitalter, muenzen, werkzeug, new Integer(0), diamanten, laenge,
 				breite, zeit, true);
 		
 		//neue Attribute setzen
-		this.bewohner = new Integer(bewohner);
-		this.muenz_einnahmen = new Integer(einnahmen);
-		this.einnahme_dauer = new Integer(einnahme_dauer);
+		this.init(bewohner, einnahmen, einnahme_dauer);
+
 		
 	}
 
 	/**
 	 * Wohngeb�udekonstruktur
-	 * Dieser Konstruktor ruft die Erzeugung eines Ge�budes auf. Dabei werden zwei Werte mit Konstanten gef�llt:
-	 *   - die Anzahl der ben�tigten Personen mit 0
-	 *   - die Angabe, dass eine Stra�e ben�tigt wird mit true
+	 * Dieser Konstruktor ruft die Erzeugung eines Geäbudes auf. Dabei werden zwei Werte mit Konstanten gefüllt:
+	 *   - die Anzahl der benötigten Personen mit 0
+	 *   - die Angabe, dass eine Straße benötigt wird mit true
 	 * Beide Werte sind daher nicht mehr im Konstruktoraufruf enthalten!!
 	 * 
 	 * Im gegensatz zum obigen Konstruktor arbeitet dieser mit einem GregorianCalender als Bauzeit-Typ.
 	 * 
 	 * @param bauzeit        - Erstellungszeit als GregorianCalender
-	 * @param breite         - Grundfl�che des Geb�udes - Breitenangabe
-	 * @param diamanten      - Anzahl Diamanten die zur Erstellung ben�tigt werden
-	 * @param laenge         - Grundfl�che des Geb�udes - L�ngenangabe
-	 * @param muenzen        - Anzahl M�nzen die zur Erstellung ben�tigt werden
-	 * @param name           - Name des Geb�udes
-	 * @param werkzeug       - Anzahl Werkzeug die zur Erstellung ben�tigt werden
+	 * @param breite         - Grundfläche des Gebäudes - Breitenangabe
+	 * @param diamanten      - Anzahl Diamanten die zur Erstellung benötigt werden
+	 * @param laenge         - Grundfläche des Gebäudes - Längenangabe
+	 * @param muenzen        - Anzahl Münzen die zur Erstellung benötigt werden
+	 * @param name           - Name des Gebäudes
+	 * @param werkzeug       - Anzahl Werkzeug die zur Erstellung benötigt werden
 	 * @param zeitalter      - Zeitalter als String
 	 * @param bewohner       - Anzahl der Bewohnter die hinzugewonnen werden
-	 * @param einnahmen      - Anzahl der M�nzeinnahmen 
-	 * @param einnahme_dauer - Zeit die gebraucht wird, um die M�nzeinnahmen zu generieren in Sekunden
+	 * @param einnahmen      - Anzahl der Münzeinnahmen 
+	 * @param einnahme_dauer - Zeit die gebraucht wird, um die Münzeinnahmen zu generieren in Sekunden
 	 */
 	public Wohngebaeude(GregorianCalendar bauzeit, Integer breite,
 			Integer diamanten, Integer laenge, Integer muenzen, String name,
 			Integer werkzeug, String zeitalter, int bewohner, int einnahmen, int einnahme_dauer) {
 		
-		//aufruf des �bergeordneten Konstruktors
-		super(bauzeit, breite, diamanten, laenge, muenzen, name, new Integer(0),
-				true, werkzeug, zeitalter);
+		//aufruf des übergeordneten Konstruktors
+		super(name, zeitalter, muenzen, werkzeug, new Integer(0), diamanten, laenge, breite, bauzeit, true);
 		
 		//neue Attribute setzen
-				this.bewohner = new Integer(bewohner);
-				this.muenz_einnahmen = new Integer(einnahmen);
-				this.einnahme_dauer = new Integer(einnahme_dauer);
+		this.init(bewohner, einnahmen, einnahme_dauer);
+//				this.bewohner = new Integer(bewohner);
+//				this.muenz_einnahmen = new Integer(einnahmen);
+//				this.einnahme_dauer = new Integer(einnahme_dauer);
 	}
 
 
@@ -119,7 +118,7 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 		this.bewohner = bewohner;
 	}
 
-	//***************************** M�nzeinnahmen ******************************************************
+	//***************************** Münzeinnahmen ******************************************************
 
 	/**
 	 * @return the muenz_einnahmen
@@ -159,7 +158,7 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	
 	/* ********************************************************************************************************************************
 	 *                                                                                                                                *
-	 *                         �berschriebene Funktionen und Methoden                                                                 *
+	 *                         überschriebene Funktionen und Methoden                                                                 *
 	 *                                                                                                                                *
 	 * ********************************************************************************************************************************                         	
 	 */
@@ -180,6 +179,18 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	 *                                                                                                                                *
 	 * ********************************************************************************************************************************                         	
 	 */
+	
+	/**
+	 * Private Methode für Konstrukotren, die neuen drei Attribute zu setzten:
+	 * @param bewohner
+	 * @param einnahmen
+	 * @param einnahme_dauer
+	 */
+	private void init(int bewohner, int einnahmen, int einnahme_dauer) {
+		this.setBewohner(new Integer(bewohner));
+		this.setMuenz_einnahmen(new Integer(einnahmen));
+		this.setEinnahme_dauer(new Integer(einnahme_dauer));
+	}
 	 
 	/**
 	 * Diese Funktion berechnet die erwirtschaftete M�nzmenge unter Verwendung eines Faktors. Es wird normal gerundet.
@@ -207,7 +218,7 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	public Integer berechneMuenzenInZeit(int zeit) {
 		double fak = zeit / this.getEinnahme_dauer().doubleValue();
 		Double erg = new Double(getMuenz_einnahmen() * fak + 0.5);
-//		System.out.println("Prodzeit: " + this.getEinnahme_dauer() + " Faktor: " + fak + " M�nzen in Zeit: " + new Integer(erg.intValue()));
+//		System.out.println("Prodzeit: " + this.getEinnahme_dauer() + " Faktor: " + fak + " Münzen in Zeit: " + new Integer(erg.intValue()));
 		return new Integer(erg.intValue());
 		
 		

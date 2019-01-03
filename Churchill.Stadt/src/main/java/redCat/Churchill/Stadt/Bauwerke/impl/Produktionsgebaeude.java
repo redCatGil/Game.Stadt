@@ -60,20 +60,20 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, zeit, strasse);
 		
 		//neue Attribute setzen
-		this.in_5_Minuten = new Integer(in_5_min);
-		this.in_15_Minuten = new Integer(in_15_min);
-		this.in_1_Stunde = new Integer(in_1_h);
-		this.in_4_Stunden = new Integer(in_4_h);
-		this.in_8_Stunden = new Integer(in_8_h);
-		this.in_1_Tag = new Integer(in_1_tag);
-		this.name_5_min = name_5_min;
-		this.name_15_min = name_15_min;
-		this.name_1_h = name_1_h;
-		this.name_4_h = name_4_h;
-		this.name_8_h = name_8_h;
-		this.name_1_t = name_1_t;
+		this.setIn_5_Minuten(new Integer(in_5_min));
+		this.setIn_15_Minuten(new Integer(in_15_min));
+		this.setIn_1_Stunde(new Integer(in_1_h));
+		this.setIn_4_Stunden(new Integer(in_4_h));
+		this.setIn_8_Stunden(new Integer(in_8_h));
+		this.setIn_1_Tag(new Integer(in_1_tag));
+		this.setName_5_min(name_5_min);
+		this.setName_15_min(name_15_min);
+		this.setName_1_h(name_1_h);
+		this.setName_4_h(name_4_h);
+		this.setName_8_h(name_8_h);
+		this.setName_1_t(name_1_t);
+		this.setGebaeude_art(gebaeude_art);
 		
-		this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
 	}
 	
 	/* ***********************************************************************************************
@@ -282,7 +282,11 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	}
 
 	public void setGebaeude_art(String gebaeude_art) {
-		this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
+		try {
+			this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
+		} catch (Exception e) {
+			this.gebaeude_art = "UNBEKANNT";
+		}
 		
 	}
 	
@@ -306,6 +310,13 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 				+ ", name_1_h=" + name_1_h + ", name_4_h=" + name_4_h
 				+ ", name_8_h=" + name_8_h + ", name_1_t=" + name_1_t + "]";
 	}
+	
+	/* ********************************************************************************************************************************
+	 *                                                                                                                                *
+	 *                         eigene Funktionen und Methoden                                                                         *
+	 *                                                                                                                                *
+	 * ********************************************************************************************************************************                         	
+	 */
 
 	public Integer berechneProduktion(Integer produktion, Integer faktor) {
 		double fak = faktor / 100.0;

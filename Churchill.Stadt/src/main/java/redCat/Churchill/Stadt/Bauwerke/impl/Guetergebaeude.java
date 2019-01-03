@@ -3,6 +3,7 @@ package redCat.Churchill.Stadt.Bauwerke.impl;
 import java.util.GregorianCalendar;
 
 import redCat.Churchill.Stadt.Bauwerke.api.Guetergebaeude_api;
+import redCat.Churchill.Stadt.Enumeration.*;
 
 public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 	
@@ -34,13 +35,8 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, zeit, strasse);
 		
 		//neue Attribute setzen
-		this.produkt = produkt;
-		this.material = material;
-		this.in4Stunden = in4Stunden;
-		this.in8Stunden = in8Stunden;
-		this.in1Tag = in1Tag;
-		this.in2Tagen = in2Tagen;
-		this.gebaeude_art = gebaeude_art;
+		this.init(produkt, material, in4Stunden, in8Stunden, in1Tag, in2Tagen, gebaeude_art);
+
 	}
 
 	public Guetergebaeude(GregorianCalendar bauzeit, Integer breite, Integer diamanten, Integer laenge, Integer muenzen,
@@ -48,17 +44,11 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 			GueterProd in8Stunden, GueterProd in1Tag, GueterProd in2Tagen, String gebaeude_art) {
 		
 		//aufruf des übergeordneten Konstruktors
-		super(bauzeit, breite, diamanten, laenge, muenzen, name, personen, strasse_benoetigt, werkzeug, zeitalter);
+		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge, breite, bauzeit, strasse_benoetigt);
 		
 		//neue Attribute setzen
-		this.produkt = produkt;
-		this.material = material;
-		this.in4Stunden = in4Stunden;
-		this.in8Stunden = in8Stunden;
-		this.in1Tag = in1Tag;
-		this.in2Tagen = in2Tagen;
-		this.gebaeude_art = gebaeude_art;
-		
+		this.init(produkt, material, in4Stunden, in8Stunden, in1Tag, in2Tagen, gebaeude_art);
+
 	}
 	
 	/* ***********************************************************************************************
@@ -310,8 +300,47 @@ public class Guetergebaeude extends Gebaeude implements Guetergebaeude_api {
 //	}
 //
 	public void setGebaeude_art(String gebaeude_art) {
-		this.gebaeude_art = gebaeude_art;
+		try {
+			this.gebaeude_art = Gebaeude_Art_enum.valueOf(gebaeude_art).toString();
+		} catch (Exception e) {
+			this.gebaeude_art = "UNBEKANNT";
+		}
 	}
 
+	/* ********************************************************************************************************************************
+	 *                                                                                                                                *
+	 *                         überschriebene Funktionen und Methoden                                                                 *
+	 *                                                                                                                                *
+	 * ********************************************************************************************************************************                         	
+	 */
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return super.toString()+"Guetergebaeude [produkt=" + produkt + ", material=" + material + ", in4Stunden=" + in4Stunden
+				+ ", in8Stunden=" + in8Stunden + ", in1Tag=" + in1Tag + ", in2Tagen=" + in2Tagen + ", gebaeude_art="
+				+ gebaeude_art + "]";
+	}
+
+	/* ********************************************************************************************************************************
+	 *                                                                                                                                *
+	 *                         eigene Funktionen und Methoden                                                                         *
+	 *                                                                                                                                *
+	 * ********************************************************************************************************************************                         	
+	 */
+	
+	private void init(String produkt, String material, GueterProd in4Stunden,GueterProd in8Stunden, GueterProd in1Tag, GueterProd in2Tagen, String gebaeude_art) 
+	{
+		this.setProdukt(produkt);
+		this.setMaterial(material);
+		this.setIn4Stunden(in4Stunden);
+		this.setIn8Stunden(in8Stunden);
+		this.setIn1Tag(in1Tag);
+		this.setIn2Tagen(in2Tagen);
+		this.setGebaeude_art(gebaeude_art);
+		
+	}
+	
 
 }
