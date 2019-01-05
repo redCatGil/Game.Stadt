@@ -289,6 +289,7 @@ public class MarmorsteinmetzTest {
   public void marmorsteinmetz_ist_normales_gebaeude() {
 	  Assert.assertEquals(marmorsteinmetz.getGebaeude_art(), gebaeude_art);
 	  Assert.assertEquals(marmorsteinmetz.getGebaeude_art(), "Normal");
+	  System.out.println(marmorsteinmetz.toString());
   }
  
 

@@ -69,6 +69,22 @@ public class GueterProd {
 	public void setProdWZ(Integer prodWZ) {
 		this.prodWZ = prodWZ;
 	}
+
+	/* ********************************************************************************************************************************
+	 *                                                                                                                                *
+	 *                         überschriebene Funktionen und Methoden                                                                 *
+	 *                                                                                                                                *
+	 * ********************************************************************************************************************************                         	
+	 */
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "GueterProd [prodName=" + prodName + ", prodMenge=" + prodMenge + ", prodMuenzen=" + prodMuenzen
+				+ ", prodWZ=" + prodWZ + "]";
+	}
+	
 	
 	
 	
