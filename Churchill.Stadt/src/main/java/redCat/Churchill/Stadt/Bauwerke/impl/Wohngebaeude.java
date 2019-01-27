@@ -8,6 +8,9 @@ import redCat.Churchill.Stadt.Bauwerke.api.Wohngebaeude_api;
 
 public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 	
+	private static final boolean MIT_STRASSE = true;
+	private static final Integer KEINE_PERSON = new Integer(0);
+	
 	private Integer bewohner;
 	private Integer muenz_einnahmen;
 	private Integer einnahme_dauer;
@@ -49,8 +52,8 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 			int zeit, int bewohner, int einnahmen, int einnahme_dauer) {
 		
 		//aufruf des übergeordneten Konstruktors
-		super(name, zeitalter, muenzen, werkzeug, new Integer(0), diamanten, laenge,
-				breite, zeit, true);
+		super(name, zeitalter, muenzen, werkzeug, KEINE_PERSON, diamanten, laenge,
+				breite, zeit, MIT_STRASSE);
 		
 		//neue Attribute setzen
 		this.init(bewohner, einnahmen, einnahme_dauer);
@@ -84,7 +87,7 @@ public class Wohngebaeude extends Gebaeude implements Wohngebaeude_api {
 			Integer werkzeug, String zeitalter, int bewohner, int einnahmen, int einnahme_dauer) {
 		
 		//aufruf des übergeordneten Konstruktors
-		super(name, zeitalter, muenzen, werkzeug, new Integer(0), diamanten, laenge, breite, bauzeit, true);
+		super(name, zeitalter, muenzen, werkzeug, KEINE_PERSON, diamanten, laenge, breite, bauzeit, MIT_STRASSE);
 		
 		//neue Attribute setzen
 		this.init(bewohner, einnahmen, einnahme_dauer);
