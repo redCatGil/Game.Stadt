@@ -177,6 +177,8 @@ public class Toolbox {
 		case 4: return new Marmorsteinmetz();
 		case 5: return new Weberei();
 		case 6: return new Kalksteinmetz();
+		case 7: return new Juwelier();
+		
 		
 		default: return null;
 		}

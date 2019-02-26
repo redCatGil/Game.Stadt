@@ -7,6 +7,7 @@ public enum Gueter_enum {
 	Färberei,
 	Marmorsteinmetz,
 	Weberei,
-	Kalksteinmetz
+	Kalksteinmetz,
+	Juwelier
 
 }
