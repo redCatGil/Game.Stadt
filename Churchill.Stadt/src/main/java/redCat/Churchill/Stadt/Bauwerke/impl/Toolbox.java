@@ -178,6 +178,7 @@ public class Toolbox {
 		case 5: return new Weberei();
 		case 6: return new Kalksteinmetz();
 		case 7: return new Juwelier();
+		case 8: return new Ebenholzwerkstatt();
 		
 		
 		default: return null;
