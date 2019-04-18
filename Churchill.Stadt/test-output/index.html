@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Bastel-ACC\AppData\Local\Temp\testng-eclipse-138566132\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">29 methods,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="bauzeit_imkerei_ist_drei_Stunden_50_minuten">bauzeit_imkerei_ist_drei_Stunden_50_minuten</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_benoetigt_strasse">imkerei_benoetigt_strasse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_benötigt_340_personen">imkerei_benötigt_340_personen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_ist_3_breit">imkerei_ist_3_breit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_ist_3_lang">imkerei_ist_3_lang</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_ist_normales_gebaeude">imkerei_ist_normales_gebaeude</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostest_10300_werkzeug">imkerei_kostest_10300_werkzeug</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_6000_muenzen">imkerei_kostet_6000_muenzen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_1_tag_1600_muenzen">imkerei_kostet_in_1_tag_1600_muenzen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_1_tag_1600_wz">imkerei_kostet_in_1_tag_1600_wz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_2_tagen_2400_muenzen">imkerei_kostet_in_2_tagen_2400_muenzen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_2_tagen_2400_wz">imkerei_kostet_in_2_tagen_2400_wz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_4_stunden_400_muenzen">imkerei_kostet_in_4_stunden_400_muenzen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_4_stunden_400_wz">imkerei_kostet_in_4_stunden_400_wz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_8_stunden_800_muenzen">imkerei_kostet_in_8_stunden_800_muenzen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_in_8_stunden_800_wz">imkerei_kostet_in_8_stunden_800_wz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_kostet_keine_daimanten">imkerei_kostet_keine_daimanten</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_material_ist_honigwabe">imkerei_material_ist_honigwabe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produkt_ist_honig">imkerei_produkt_ist_honig</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_1_tag_20_honig">imkerei_produziert_in_1_tag_20_honig</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_1_tag_honigkruege">imkerei_produziert_in_1_tag_honigkruege</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_2_tagen_30_honig">imkerei_produziert_in_2_tagen_30_honig</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_2_tagen_viele_honigkruege">imkerei_produziert_in_2_tagen_viele_honigkruege</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_4_stunden_5_honig">imkerei_produziert_in_4_stunden_5_honig</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_4_stunden_honigtoepfe">imkerei_produziert_in_4_stunden_honigtoepfe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_8_stunden_10_honig">imkerei_produziert_in_8_stunden_10_honig</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="imkerei_produziert_in_8_stunden_viele_honigtoepfe">imkerei_produziert_in_8_stunden_viele_honigtoepfe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="name_muss_imkerei_sein">name_muss_imkerei_sein</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="redCat.Churchill.Stadt.ImkereiTest" hash-for-method="zeitalter_muss_fruehes_mittelalter_sein">zeitalter_muss_fruehes_mittelalter_sein</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">redCat.Churchill.Stadt.ImkereiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bauzeit_imkerei_ist_drei_Stunden_50_minuten">
+                  </a> <!-- bauzeit_imkerei_ist_drei_Stunden_50_minuten -->
+                  <span class="method-name">bauzeit_imkerei_ist_drei_Stunden_50_minuten</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_benoetigt_strasse">
+                  </a> <!-- imkerei_benoetigt_strasse -->
+                  <span class="method-name">imkerei_benoetigt_strasse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_benötigt_340_personen">
+                  </a> <!-- imkerei_benötigt_340_personen -->
+                  <span class="method-name">imkerei_benötigt_340_personen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_ist_3_breit">
+                  </a> <!-- imkerei_ist_3_breit -->
+                  <span class="method-name">imkerei_ist_3_breit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_ist_3_lang">
+                  </a> <!-- imkerei_ist_3_lang -->
+                  <span class="method-name">imkerei_ist_3_lang</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_ist_normales_gebaeude">
+                  </a> <!-- imkerei_ist_normales_gebaeude -->
+                  <span class="method-name">imkerei_ist_normales_gebaeude</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostest_10300_werkzeug">
+                  </a> <!-- imkerei_kostest_10300_werkzeug -->
+                  <span class="method-name">imkerei_kostest_10300_werkzeug</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_6000_muenzen">
+                  </a> <!-- imkerei_kostet_6000_muenzen -->
+                  <span class="method-name">imkerei_kostet_6000_muenzen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_1_tag_1600_muenzen">
+                  </a> <!-- imkerei_kostet_in_1_tag_1600_muenzen -->
+                  <span class="method-name">imkerei_kostet_in_1_tag_1600_muenzen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_1_tag_1600_wz">
+                  </a> <!-- imkerei_kostet_in_1_tag_1600_wz -->
+                  <span class="method-name">imkerei_kostet_in_1_tag_1600_wz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_2_tagen_2400_muenzen">
+                  </a> <!-- imkerei_kostet_in_2_tagen_2400_muenzen -->
+                  <span class="method-name">imkerei_kostet_in_2_tagen_2400_muenzen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_2_tagen_2400_wz">
+                  </a> <!-- imkerei_kostet_in_2_tagen_2400_wz -->
+                  <span class="method-name">imkerei_kostet_in_2_tagen_2400_wz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_4_stunden_400_muenzen">
+                  </a> <!-- imkerei_kostet_in_4_stunden_400_muenzen -->
+                  <span class="method-name">imkerei_kostet_in_4_stunden_400_muenzen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_4_stunden_400_wz">
+                  </a> <!-- imkerei_kostet_in_4_stunden_400_wz -->
+                  <span class="method-name">imkerei_kostet_in_4_stunden_400_wz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_8_stunden_800_muenzen">
+                  </a> <!-- imkerei_kostet_in_8_stunden_800_muenzen -->
+                  <span class="method-name">imkerei_kostet_in_8_stunden_800_muenzen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_in_8_stunden_800_wz">
+                  </a> <!-- imkerei_kostet_in_8_stunden_800_wz -->
+                  <span class="method-name">imkerei_kostet_in_8_stunden_800_wz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_kostet_keine_daimanten">
+                  </a> <!-- imkerei_kostet_keine_daimanten -->
+                  <span class="method-name">imkerei_kostet_keine_daimanten</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_material_ist_honigwabe">
+                  </a> <!-- imkerei_material_ist_honigwabe -->
+                  <span class="method-name">imkerei_material_ist_honigwabe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produkt_ist_honig">
+                  </a> <!-- imkerei_produkt_ist_honig -->
+                  <span class="method-name">imkerei_produkt_ist_honig</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_1_tag_20_honig">
+                  </a> <!-- imkerei_produziert_in_1_tag_20_honig -->
+                  <span class="method-name">imkerei_produziert_in_1_tag_20_honig</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_1_tag_honigkruege">
+                  </a> <!-- imkerei_produziert_in_1_tag_honigkruege -->
+                  <span class="method-name">imkerei_produziert_in_1_tag_honigkruege</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_2_tagen_30_honig">
+                  </a> <!-- imkerei_produziert_in_2_tagen_30_honig -->
+                  <span class="method-name">imkerei_produziert_in_2_tagen_30_honig</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_2_tagen_viele_honigkruege">
+                  </a> <!-- imkerei_produziert_in_2_tagen_viele_honigkruege -->
+                  <span class="method-name">imkerei_produziert_in_2_tagen_viele_honigkruege</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_4_stunden_5_honig">
+                  </a> <!-- imkerei_produziert_in_4_stunden_5_honig -->
+                  <span class="method-name">imkerei_produziert_in_4_stunden_5_honig</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_4_stunden_honigtoepfe">
+                  </a> <!-- imkerei_produziert_in_4_stunden_honigtoepfe -->
+                  <span class="method-name">imkerei_produziert_in_4_stunden_honigtoepfe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_8_stunden_10_honig">
+                  </a> <!-- imkerei_produziert_in_8_stunden_10_honig -->
+                  <span class="method-name">imkerei_produziert_in_8_stunden_10_honig</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imkerei_produziert_in_8_stunden_viele_honigtoepfe">
+                  </a> <!-- imkerei_produziert_in_8_stunden_viele_honigtoepfe -->
+                  <span class="method-name">imkerei_produziert_in_8_stunden_viele_honigtoepfe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="name_muss_imkerei_sein">
+                  </a> <!-- name_muss_imkerei_sein -->
+                  <span class="method-name">name_muss_imkerei_sein</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zeitalter_muss_fruehes_mittelalter_sein">
+                  </a> <!-- zeitalter_muss_fruehes_mittelalter_sein -->
+                  <span class="method-name">zeitalter_muss_fruehes_mittelalter_sein</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Bastel-ACC\AppData\Local\Temp\testng-eclipse-138566132\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;redCat.Churchill.Stadt.ImkereiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(29);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'imkerei_kostet_in_8_stunden_800_wz')
+data.setCell(0, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(0, 3, 37);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'imkerei_kostest_10300_werkzeug')
+data.setCell(1, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(1, 3, 10);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'bauzeit_imkerei_ist_drei_Stunden_50_minuten')
+data.setCell(2, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(2, 3, 9);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'imkerei_produziert_in_4_stunden_5_honig')
+data.setCell(3, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'imkerei_kostet_in_4_stunden_400_muenzen')
+data.setCell(4, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(4, 3, 4);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'imkerei_produziert_in_4_stunden_honigtoepfe')
+data.setCell(5, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'zeitalter_muss_fruehes_mittelalter_sein')
+data.setCell(6, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'imkerei_kostet_in_2_tagen_2400_muenzen')
+data.setCell(7, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'imkerei_kostet_in_1_tag_1600_wz')
+data.setCell(8, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'imkerei_material_ist_honigwabe')
+data.setCell(9, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'imkerei_kostet_keine_daimanten')
+data.setCell(10, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'imkerei_ist_3_lang')
+data.setCell(11, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'imkerei_benoetigt_strasse')
+data.setCell(12, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'imkerei_kostet_6000_muenzen')
+data.setCell(13, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'imkerei_kostet_in_2_tagen_2400_wz')
+data.setCell(14, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'imkerei_kostet_in_8_stunden_800_muenzen')
+data.setCell(15, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'imkerei_kostet_in_1_tag_1600_muenzen')
+data.setCell(16, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'imkerei_produziert_in_2_tagen_30_honig')
+data.setCell(17, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'imkerei_produziert_in_2_tagen_viele_honigkruege')
+data.setCell(18, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(18, 3, 2);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'imkerei_kostet_in_4_stunden_400_wz')
+data.setCell(19, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'imkerei_ist_3_breit')
+data.setCell(20, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'imkerei_ist_normales_gebaeude')
+data.setCell(21, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'imkerei_produkt_ist_honig')
+data.setCell(22, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'imkerei_produziert_in_8_stunden_10_honig')
+data.setCell(23, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'name_muss_imkerei_sein')
+data.setCell(24, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'imkerei_produziert_in_8_stunden_viele_honigtoepfe')
+data.setCell(25, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'imkerei_produziert_in_1_tag_honigkruege')
+data.setCell(26, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'imkerei_benötigt_340_personen')
+data.setCell(27, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'imkerei_produziert_in_1_tag_20_honig')
+data.setCell(28, 2, 'redCat.Churchill.Stadt.ImkereiTest')
+data.setCell(28, 3, 1);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 113 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">redCat.Churchill.Stadt.ImkereiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bauzeit_imkerei_ist_drei_Stunden_50_minuten</span>
+                <span class="method-start">623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_benoetigt_strasse</span>
+                <span class="method-start">653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">657 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_benötigt_340_personen</span>
+                <span class="method-start">662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_ist_3_breit</span>
+                <span class="method-start">676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">681 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_ist_3_lang</span>
+                <span class="method-start">688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_ist_normales_gebaeude</span>
+                <span class="method-start">708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">712 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostest_10300_werkzeug</span>
+                <span class="method-start">727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_6000_muenzen</span>
+                <span class="method-start">748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_1_tag_1600_muenzen</span>
+                <span class="method-start">760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_1_tag_1600_wz</span>
+                <span class="method-start">776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_2_tagen_2400_muenzen</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_2_tagen_2400_wz</span>
+                <span class="method-start">815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_4_stunden_400_muenzen</span>
+                <span class="method-start">830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_4_stunden_400_wz</span>
+                <span class="method-start">862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_8_stunden_800_muenzen</span>
+                <span class="method-start">875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_in_8_stunden_800_wz</span>
+                <span class="method-start">888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">940 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_kostet_keine_daimanten</span>
+                <span class="method-start">948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_material_ist_honigwabe</span>
+                <span class="method-start">958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produkt_ist_honig</span>
+                <span class="method-start">968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">970 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_1_tag_20_honig</span>
+                <span class="method-start">977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_1_tag_honigkruege</span>
+                <span class="method-start">989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">997 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_2_tagen_30_honig</span>
+                <span class="method-start">1015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_2_tagen_viele_honigkruege</span>
+                <span class="method-start">1027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_4_stunden_5_honig</span>
+                <span class="method-start">1036 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_4_stunden_honigtoepfe</span>
+                <span class="method-start">1065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_8_stunden_10_honig</span>
+                <span class="method-start">1077 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imkerei_produziert_in_8_stunden_viele_honigtoepfe</span>
+                <span class="method-start">1083 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1086 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">name_muss_imkerei_sein</span>
+                <span class="method-start">1089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">zeitalter_muss_fruehes_mittelalter_sein</span>
+                <span class="method-start">1113 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

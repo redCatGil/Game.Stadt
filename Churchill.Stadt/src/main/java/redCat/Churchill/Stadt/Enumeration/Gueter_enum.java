@@ -9,6 +9,7 @@ public enum Gueter_enum {
 	Weberei,
 	Kalksteinmetz,
 	Juwelier,
-	Ebenholzwerkstatt
+	Ebenholzwerkstatt,
+	Imkerei
 
 }

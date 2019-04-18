@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="29" passed="29">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1155" started-at="2019-03-09T19:37:49Z" finished-at="2019-03-09T19:37:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1155" started-at="2019-03-09T19:37:49Z" finished-at="2019-03-09T19:37:50Z">
+      <class name="redCat.Churchill.Stadt.ImkereiTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="623" started-at="2019-03-09T19:37:49Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="bauzeit_imkerei_ist_drei_Stunden_50_minuten()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="bauzeit_imkerei_ist_drei_Stunden_50_minuten" duration-ms="9" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bauzeit_imkerei_ist_drei_Stunden_50_minuten -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_benoetigt_strasse()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_benoetigt_strasse" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_benoetigt_strasse -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_benötigt_340_personen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_benötigt_340_personen" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_benötigt_340_personen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_ist_3_breit()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_ist_3_breit" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_ist_3_breit -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_ist_3_lang()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_ist_3_lang" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_ist_3_lang -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_ist_normales_gebaeude()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_ist_normales_gebaeude" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_ist_normales_gebaeude -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostest_10300_werkzeug()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostest_10300_werkzeug" duration-ms="10" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostest_10300_werkzeug -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_6000_muenzen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_6000_muenzen" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_6000_muenzen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_1_tag_1600_muenzen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_1_tag_1600_muenzen" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_1_tag_1600_muenzen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_1_tag_1600_wz()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_1_tag_1600_wz" duration-ms="3" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_1_tag_1600_wz -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_2_tagen_2400_muenzen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_2_tagen_2400_muenzen" duration-ms="3" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_2_tagen_2400_muenzen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_2_tagen_2400_wz()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_2_tagen_2400_wz" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_2_tagen_2400_wz -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_4_stunden_400_muenzen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_4_stunden_400_muenzen" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_4_stunden_400_muenzen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_4_stunden_400_wz()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_4_stunden_400_wz" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_4_stunden_400_wz -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_8_stunden_800_muenzen()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_8_stunden_800_muenzen" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_8_stunden_800_muenzen -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_in_8_stunden_800_wz()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_in_8_stunden_800_wz" duration-ms="37" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_in_8_stunden_800_wz -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_kostet_keine_daimanten()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_kostet_keine_daimanten" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_kostet_keine_daimanten -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_material_ist_honigwabe()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_material_ist_honigwabe" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_material_ist_honigwabe -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produkt_ist_honig()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produkt_ist_honig" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produkt_ist_honig -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_1_tag_20_honig()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_1_tag_20_honig" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_1_tag_20_honig -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_1_tag_honigkruege()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_1_tag_honigkruege" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_1_tag_honigkruege -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_2_tagen_30_honig()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_2_tagen_30_honig" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_2_tagen_30_honig -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_2_tagen_viele_honigkruege()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_2_tagen_viele_honigkruege" duration-ms="2" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_2_tagen_viele_honigkruege -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_4_stunden_5_honig()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_4_stunden_5_honig" duration-ms="7" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_4_stunden_5_honig -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_4_stunden_honigtoepfe()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_4_stunden_honigtoepfe" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_4_stunden_honigtoepfe -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_8_stunden_10_honig()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_8_stunden_10_honig" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_8_stunden_10_honig -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imkerei_produziert_in_8_stunden_viele_honigtoepfe()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="imkerei_produziert_in_8_stunden_viele_honigtoepfe" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imkerei_produziert_in_8_stunden_viele_honigtoepfe -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="name_muss_imkerei_sein()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="name_muss_imkerei_sein" duration-ms="1" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name_muss_imkerei_sein -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="22" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="zeitalter_muss_fruehes_mittelalter_sein()[pri:0, instance:redCat.Churchill.Stadt.ImkereiTest@5419f379]" name="zeitalter_muss_fruehes_mittelalter_sein" duration-ms="4" started-at="2019-03-09T19:37:50Z" finished-at="2019-03-09T19:37:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zeitalter_muss_fruehes_mittelalter_sein -->
+      </class> <!-- redCat.Churchill.Stadt.ImkereiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
