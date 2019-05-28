@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Tabakplantage</comment>
+	<entry key="Name">Tabakplantage</entry>
+	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Muenzen">81000</entry>
+	<entry key="Werkzeug">15700</entry>
+	<entry key="Personen">365</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">4</entry>
+	<entry key="Breite">4</entry>
+	<entry key="Bauzeit">52800</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">150</entry>
+	<entry key="15_min">380</entry>
+	<entry key="1_h">900</entry>
+	<entry key="4_h">1500</entry>
+	<entry key="8_h">2260</entry>
+	<entry key="1_t">4510</entry>
+	<entry key="Name_5_min">Zigarre</entry>
+	<entry key="Name_15_min">Zigarillo-Schachtel</entry>
+	<entry key="Name_1_h">Zigarrenschachtel</entry>
+	<entry key="Name_4_h">Zigarrenkiste</entry>
+	<entry key="Name_8_h">Tabakfass</entry>
+	<entry key="Name_1_t">Tabakfässer</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>
