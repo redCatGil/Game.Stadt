@@ -19,6 +19,7 @@ public enum Gebaeude_enum {
 	Mietshaus,
 	Arkadenhaus,
 	Kolonialhaus,
-	Landhaus
+	Landhaus,
+	Mansarddach_Haus
 
 }

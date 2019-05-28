@@ -128,6 +128,9 @@ public class Toolbox {
 
 		case 18:
 			return new Landhaus();
+			
+		case 19:
+			return new Mansarddach_Haus();
 
 		default:
 			return null;
@@ -162,6 +165,14 @@ public class Toolbox {
 		case 11: return new Alchemistenlabor();
 		
 		case 12: return new Gewuerzhandlung();
+		
+		case 13: return new Brauerei();
+		
+		case 14: return new Kueferei();
+		
+		case 15: return new Tabakplantage();
+		
+		case 16: return new Segelmacher();
 			
 		default: return null;
 		}
