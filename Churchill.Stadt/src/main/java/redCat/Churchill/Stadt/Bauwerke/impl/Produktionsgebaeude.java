@@ -1,5 +1,9 @@
 package redCat.Churchill.Stadt.Bauwerke.impl;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import redCat.Churchill.Stadt.Bauwerke.api.Produktionsgebaeude_api;
 import redCat.Churchill.Stadt.Enumeration.Gebaeude_Art_enum;
 
@@ -18,6 +22,8 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 	private String name_8_h;
 	private String name_1_t;
 	private String gebaeude_art;
+	private Date pBauzeit;
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 	
 	/* ***********************************************************************************************
 	 * 
@@ -74,6 +80,14 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		this.setName_1_t(name_1_t);
 		this.setGebaeude_art(gebaeude_art);
 		
+		//Bauzeit berechnen
+		String ds = "01.01.2018 " + Toolbox.ermittleStunden(zeit) + ":" + Toolbox.ermittleMinuten(zeit) + ":" + Toolbox.ermittleSekunden(zeit);
+		try {
+			this.setpBauzeit(sdf.parse(ds));
+		} catch (ParseException e) {
+			System.err.println("Die Bauzeit konnte nicht geparst werden: " + zeit);
+			e.printStackTrace();
+		}
 	}
 	
 	/* ***********************************************************************************************
@@ -290,12 +304,30 @@ public class Produktionsgebaeude extends Gebaeude implements Produktionsgebaeude
 		
 	}
 	
+	//***************************** Bauzeit des Produtkionsgebäudes ******************************************
+	
+	/**
+	 * @return the pBauzeit
+	 */
+	public Date getpBauzeit() {
+		return pBauzeit;
+	}
+
+	/**
+	 * @param pBauzeit the pBauzeit to set
+	 */
+	public void setpBauzeit(Date pBauzeit) {
+		this.pBauzeit = pBauzeit;
+	}
+	
 	/* ********************************************************************************************************************************
 	 *                                                                                                                                *
 	 *                         überschriebene Funktionen und Methoden                                                                 *
 	 *                                                                                                                                *
 	 * ********************************************************************************************************************************                         	
 	 */
+
+	
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()

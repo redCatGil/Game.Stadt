@@ -14,5 +14,8 @@ public enum Produktions_enum {
 	Windmühle,
 	Alchemistenlabor,
 	Gewürzhandlung,
-	Brauerei
+	Brauerei,
+	Küferei,
+	Tabakplantage,
+	Segelmacher
 }

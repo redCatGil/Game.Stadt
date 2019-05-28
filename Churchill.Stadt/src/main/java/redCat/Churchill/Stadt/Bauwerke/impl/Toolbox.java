@@ -167,6 +167,12 @@ public class Toolbox {
 		case 12: return new Gewuerzhandlung();
 		
 		case 13: return new Brauerei();
+		
+		case 14: return new Kueferei();
+		
+		case 15: return new Tabakplantage();
+		
+		case 16: return new Segelmacher();
 			
 		default: return null;
 		}
