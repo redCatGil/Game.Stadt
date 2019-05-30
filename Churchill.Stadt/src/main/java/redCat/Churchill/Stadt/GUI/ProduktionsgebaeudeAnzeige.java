@@ -108,7 +108,8 @@ public class ProduktionsgebaeudeAnzeige extends Dialog {
 					txtWerkzeug1.setText(prod.getWerkzeug().toString());
 					txtDias1.setText(prod.getDiamanten().toString());
 					txtLen1.setText(prod.getLaenge().toString() + "x" + prod.getBreite());
-					txtBauzeit1.setText(Toolbox.TimeToString(prod.getBauzeit()));
+//					txtBauzeit1.setText(Toolbox.TimeToString(prod.getBauzeit()));
+					txtBauzeit1.setText(Toolbox.DateTimeToString(prod.getpBauzeit()));
 					txtPersonen1.setText(prod.getPersonen().toString());
 					txt5m.setText(prod.getIn_5_Minuten() + " - " + prod.getName_5_min());
 					txt15m.setText(prod.getIn_15_Minuten().toString() + " - " + prod.getName_15_min());
