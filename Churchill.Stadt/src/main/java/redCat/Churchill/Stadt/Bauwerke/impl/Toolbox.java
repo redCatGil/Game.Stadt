@@ -193,6 +193,10 @@ public class Toolbox {
 		case 15: return new Tabakplantage();
 		
 		case 16: return new Segelmacher();
+		
+		case 17: return new Parfuem_Destillerie();
+		
+		case 18: return new Uhrmacher();
 			
 		default: return null;
 		}

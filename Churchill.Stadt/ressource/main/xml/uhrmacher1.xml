@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Uhrmacher</comment>
+	<entry key="Name">Uhrmacher</entry>
+	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Muenzen">43000</entry>
+	<entry key="Werkzeug">7400</entry>
+	<entry key="Personen">68</entry>
+	<entry key="Diamanten">0</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">30000</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">50</entry>
+	<entry key="15_min">140</entry>
+	<entry key="1_h">320</entry>
+	<entry key="4_h">540</entry>
+	<entry key="8_h">810</entry>
+	<entry key="1_t">1620</entry>
+	<entry key="Name_5_min">Uhrenteile</entry>
+	<entry key="Name_15_min">Sextant</entry>
+	<entry key="Name_1_h">Taschenuhr</entry>
+	<entry key="Name_4_h">Tischuhr</entry>
+	<entry key="Name_8_h">Standuhr</entry>
+	<entry key="Name_1_t">Turmuhr</entry>
+	<entry key="Geb_Art">Normal</entry>
+</properties>
