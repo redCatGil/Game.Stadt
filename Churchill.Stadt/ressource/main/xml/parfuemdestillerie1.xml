@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Parfüm_Destillerie</comment>
+	<entry key="Name">Parfüm-Destillerie</entry>
+	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Muenzen">0</entry>
+	<entry key="Werkzeug">0</entry>
+	<entry key="Personen">78</entry>
+	<entry key="Diamanten">500</entry>
+	<entry key="Laenge">3</entry>
+	<entry key="Breite">2</entry>
+	<entry key="Bauzeit">20</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">100</entry>
+	<entry key="15_min">260</entry>
+	<entry key="1_h">620</entry>
+	<entry key="4_h">1030</entry>
+	<entry key="8_h">1550</entry>
+	<entry key="1_t">3100</entry>
+	<entry key="Name_5_min">unbekannt</entry>
+	<entry key="Name_15_min">unbekannt</entry>
+	<entry key="Name_1_h">unbekannt</entry>
+	<entry key="Name_4_h">unbekannt</entry>
+	<entry key="Name_8_h">unbekannt</entry>
+	<entry key="Name_1_t">unbekannt</entry>
+	<entry key="Geb_Art">Diamant</entry>
+</properties>

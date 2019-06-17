@@ -2,6 +2,8 @@ package redCat.Churchill.Stadt.Bauwerke.impl;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Properties;
@@ -9,6 +11,8 @@ import java.util.Properties;
 public class Jagdlager extends Produktionsgebaeude {
 	
 	private final String DSN = "ressource/main/xml/jagdlager1.xml";
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+	
 
 	public Jagdlager() {
 		// TODO Auto-generated constructor stub
@@ -68,6 +72,17 @@ public class Jagdlager extends Produktionsgebaeude {
 		this.setName_8_h(props.getProperty("Name_8_h"));
 		this.setName_1_t(props.getProperty("Name_1_t"));
 		this.setGebaeude_art(props.getProperty("Geb_Art"));
+		
+		// Bauzeit berechnen
+		String ds = "01.01.2018 " + Toolbox.ermittleStunden(zeit) + ":" + Toolbox.ermittleMinuten(zeit) + ":"
+				+ Toolbox.ermittleSekunden(zeit);
+		try {
+			this.setpBauzeit(sdf.parse(ds));
+			System.out.println("Bauzeit-Segelmacher: " + this.getpBauzeit().toString());
+		} catch (ParseException e) {
+			System.err.println("Die Bauzeit konnte nicht geparst werden: " + zeit);
+			e.printStackTrace();
+		}
 		
 	}
 

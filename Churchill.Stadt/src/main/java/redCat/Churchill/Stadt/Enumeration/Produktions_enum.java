@@ -17,5 +17,7 @@ public enum Produktions_enum {
 	Brauerei,
 	Küferei,
 	Tabakplantage,
-	Segelmacher
+	Segelmacher,
+	Parfüm_Destillerie,
+	Uhrmacher
 }

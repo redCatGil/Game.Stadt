@@ -6,14 +6,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 import java.util.Properties;
+import java.util.TimeZone;
 
-public class Kueferei extends Produktionsgebaeude {
+public class Uhrmacher extends Produktionsgebaeude {
 	
-	private final String DSN = "ressource/main/xml/kueferei1.xml";
+	private final String DSN = "ressource/main/xml/uhrmacher1.xml";
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 
-	public Kueferei() {
+	public Uhrmacher() {
 		// TODO Auto-generated constructor stub
 		super();
 		Properties props = new Properties();
@@ -47,7 +49,7 @@ public class Kueferei extends Produktionsgebaeude {
 		this.setStrasse_benoetigt(strasse);
 		
 		int zeit = new Integer(props.getProperty("Bauzeit")).intValue();
-		GregorianCalendar cal = new GregorianCalendar();
+		GregorianCalendar cal = new GregorianCalendar(Locale.GERMAN);
 		cal.set(Calendar.HOUR_OF_DAY,Toolbox.ermittleStunden(zeit));
 		cal.set(Calendar.HOUR,Toolbox.ermittleStunden(zeit));
 		cal.set(Calendar.MINUTE,Toolbox.ermittleMinuten(zeit));
@@ -77,7 +79,7 @@ public class Kueferei extends Produktionsgebaeude {
 				+ Toolbox.ermittleSekunden(zeit);
 		try {
 			this.setpBauzeit(sdf.parse(ds));
-			System.out.println("Bauzeit-Segelmacher: " + this.getpBauzeit().toString());
+			System.out.println("Bauzeit-Uhrmacher: " + this.getpBauzeit().toString());
 		} catch (ParseException e) {
 			System.err.println("Die Bauzeit konnte nicht geparst werden: " + zeit);
 			e.printStackTrace();
@@ -85,16 +87,23 @@ public class Kueferei extends Produktionsgebaeude {
 		
 	}
 
-	public Kueferei(String name, String zeitalter, int muenzen, int werkzeug,
+	public Uhrmacher(String name, String zeitalter, int muenzen, int werkzeug,
 			int personen, int diamanten, int laenge, int breite, int zeit,
 			boolean strasse, int in_5_min, int in_15_min, int in_1_h,
 			int in_4_h, int in_8_h, int in_1_tag, String name_5_min,
 			String name_15_min, String name_1_h, String name_4_h,
-			String name_8_h, String name_1_t, String gebaeude_art) {
+			String name_8_h, String name_1_t, String gebaeude_art) throws ParseException {
 		super(name, zeitalter, muenzen, werkzeug, personen, diamanten, laenge,
 				breite, zeit, strasse, in_5_min, in_15_min, in_1_h, in_4_h,
 				in_8_h, in_1_tag, name_5_min, name_15_min, name_1_h, name_4_h,
 				name_8_h, name_1_t, gebaeude_art);
+		
+		Calendar cal =Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		cal.setTime(this.getpBauzeit());
+//		System.out.println("std: " + cal.get(Calendar.HOUR_OF_DAY));
+//		System.out.println("min: " + cal.get(Calendar.MINUTE));
+//		System.out.println("sec: " + cal.get(Calendar.SECOND));
+		
 		// TODO Auto-generated constructor stub
 	}
 

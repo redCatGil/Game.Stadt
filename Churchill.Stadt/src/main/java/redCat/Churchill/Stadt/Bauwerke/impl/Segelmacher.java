@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Properties;
@@ -14,6 +13,7 @@ import java.util.TimeZone;
 public class Segelmacher extends Produktionsgebaeude {
 	
 	private final String DSN = "ressource/main/xml/segelmacher1.xml";
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 
 	public Segelmacher() {
 		// TODO Auto-generated constructor stub
@@ -59,8 +59,6 @@ public class Segelmacher extends Produktionsgebaeude {
 		cal.set(Calendar.MONTH,Calendar.JANUARY);
 		cal.set(Calendar.DAY_OF_MONTH,1);
 		this.setBauzeit(cal);
-		String ds = "01.01.2018 " + Toolbox.ermittleStunden(zeit) + ":" + Toolbox.ermittleMinuten(zeit) + ":" + Toolbox.ermittleSekunden(zeit);
-		System.out.println("SDF: " + ds);
 		
 		this.setIn_5_Minuten(new Integer(props.getProperty("5_min")));
 		this.setIn_15_Minuten(new Integer(props.getProperty("15_min")));
@@ -75,6 +73,16 @@ public class Segelmacher extends Produktionsgebaeude {
 		this.setName_8_h(props.getProperty("Name_8_h"));
 		this.setName_1_t(props.getProperty("Name_1_t"));
 		this.setGebaeude_art(props.getProperty("Geb_Art"));
+		
+		//Bauzeit berechnen
+		String ds = "01.01.2018 " + Toolbox.ermittleStunden(zeit) + ":" + Toolbox.ermittleMinuten(zeit) + ":" + Toolbox.ermittleSekunden(zeit);
+		try {
+				this.setpBauzeit(sdf.parse(ds));
+				System.out.println("Bauzeit-Segelmacher: " + this.getpBauzeit().toString());
+			} catch (ParseException e) {
+				System.err.println("Die Bauzeit konnte nicht geparst werden: " + zeit);
+				e.printStackTrace();
+			}
 		
 	}
 

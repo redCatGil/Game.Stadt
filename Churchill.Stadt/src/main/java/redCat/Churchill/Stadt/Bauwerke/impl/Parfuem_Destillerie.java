@@ -8,12 +8,12 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Properties;
 
-public class Kueferei extends Produktionsgebaeude {
+public class Parfuem_Destillerie extends Produktionsgebaeude {
 	
-	private final String DSN = "ressource/main/xml/kueferei1.xml";
+	private final String DSN = "ressource/main/xml/parfuemdestillerie1.xml";
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 
-	public Kueferei() {
+	public Parfuem_Destillerie() {
 		// TODO Auto-generated constructor stub
 		super();
 		Properties props = new Properties();
@@ -77,7 +77,7 @@ public class Kueferei extends Produktionsgebaeude {
 				+ Toolbox.ermittleSekunden(zeit);
 		try {
 			this.setpBauzeit(sdf.parse(ds));
-			System.out.println("Bauzeit-Segelmacher: " + this.getpBauzeit().toString());
+			System.out.println("Bauzeit-Parfüm-Destillerie: " + this.getpBauzeit().toString());
 		} catch (ParseException e) {
 			System.err.println("Die Bauzeit konnte nicht geparst werden: " + zeit);
 			e.printStackTrace();
@@ -85,7 +85,7 @@ public class Kueferei extends Produktionsgebaeude {
 		
 	}
 
-	public Kueferei(String name, String zeitalter, int muenzen, int werkzeug,
+	public Parfuem_Destillerie(String name, String zeitalter, int muenzen, int werkzeug,
 			int personen, int diamanten, int laenge, int breite, int zeit,
 			boolean strasse, int in_5_min, int in_15_min, int in_1_h,
 			int in_4_h, int in_8_h, int in_1_tag, String name_5_min,

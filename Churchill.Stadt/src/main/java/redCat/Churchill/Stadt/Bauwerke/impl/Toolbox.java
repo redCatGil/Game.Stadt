@@ -1,7 +1,9 @@
 package redCat.Churchill.Stadt.Bauwerke.impl;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 
 public class Toolbox {
 
@@ -66,6 +68,24 @@ public class Toolbox {
 			}
 			else {
 				return new String(cal.get(Calendar.HOUR) + ":" +cal.get(Calendar.MINUTE) + " h" );
+			}
+		}
+	}
+	
+	
+	public static String DateTimeToString(Date date) {
+		Calendar cal =Calendar.getInstance(TimeZone.getTimeZone("Europe/Berlin"));
+		cal.setTime(date);
+		int sec = cal.get(Calendar.SECOND);
+		int min = cal.get(Calendar.MINUTE);
+		int std = cal.get(Calendar.HOUR_OF_DAY);
+		if ((std == 0) && (min == 0)) {
+			return new String(sec + " sec");
+		} else {
+			if (std == 0) {
+				return new String(min + ":" + sec + " min");
+			} else {
+				return new String(std + ":" + min + ":" + sec + " h");
 			}
 		}
 	}
@@ -173,6 +193,10 @@ public class Toolbox {
 		case 15: return new Tabakplantage();
 		
 		case 16: return new Segelmacher();
+		
+		case 17: return new Parfuem_Destillerie();
+		
+		case 18: return new Uhrmacher();
 			
 		default: return null;
 		}
