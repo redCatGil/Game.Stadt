@@ -197,6 +197,8 @@ public class Toolbox {
 		case 17: return new Parfuem_Destillerie();
 		
 		case 18: return new Uhrmacher();
+		
+		case 19: return new Stellmacher();
 			
 		default: return null;
 		}

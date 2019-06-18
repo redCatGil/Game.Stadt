@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>Standard_Produktionsgebaeude_Stellmacher</comment>
+	<entry key="Name">Stellmacher</entry>
+	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Muenzen">0</entry>
+	<entry key="Werkzeug">0</entry>
+	<entry key="Personen">180</entry>
+	<entry key="Diamanten">500</entry>
+	<entry key="Laenge">4</entry>
+	<entry key="Breite">3</entry>
+	<entry key="Bauzeit">20</entry>
+	<entry key="Strasse">true</entry>
+	<entry key="5_min">250</entry>
+	<entry key="15_min">630</entry>
+	<entry key="1_h">1500</entry>
+	<entry key="4_h">2510</entry>
+	<entry key="8_h">3760</entry>
+	<entry key="1_t">7520</entry>
+	<entry key="Name_5_min">Speichen</entry>
+	<entry key="Name_15_min">Karrenrad</entry>
+	<entry key="Name_1_h">Wagenrad</entry>
+	<entry key="Name_4_h">Karren</entry>
+	<entry key="Name_8_h">Droschke</entry>
+	<entry key="Name_1_t">Kutsche</entry>
+	<entry key="Geb_Art">Diamant</entry>
+</properties>
