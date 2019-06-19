@@ -341,6 +341,7 @@ public class Gebaeude implements Gebaeude_api {
 		int l = this.laenge.intValue();
 		int b = this.breite.intValue();
 		double zf = getZeitfaktor().doubleValue();
+		System.out.println("Länge: " + l + "/ Breite: " + b + "/ Gebäudefaktor " + gebFaktor + "/ Zeitfaktor: " + zf);
 		double punkte = l * b * gebFaktor * zf;
 		return new Double(""+punkte);
 	}

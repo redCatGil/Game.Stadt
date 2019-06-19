@@ -110,9 +110,9 @@ public class StellmacherTest {
   }
   
   @Test
-  public void zeitalter_muss_kolonialzeit_sein() {
+  public void zeitalter_muss_Industriezeitalter_sein() {
 	  Assert.assertEquals(stellmacher.getZeitalter(), zeitalter);
-	  Assert.assertEquals(stellmacher.getZeitalter(), "Kolonialzeit");
+	  Assert.assertEquals(stellmacher.getZeitalter(), "Industriezeitalter");
   }
   
   @Test

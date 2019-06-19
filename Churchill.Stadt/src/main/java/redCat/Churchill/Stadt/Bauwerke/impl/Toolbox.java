@@ -199,6 +199,8 @@ public class Toolbox {
 		case 18: return new Uhrmacher();
 		
 		case 19: return new Stellmacher();
+		
+		case 20: return new Chemiefabrik();
 			
 		default: return null;
 		}

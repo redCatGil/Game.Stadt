@@ -3,7 +3,7 @@
 <properties version="1.0">
 	<comment>Standard_Produktionsgebaeude_Stellmacher</comment>
 	<entry key="Name">Stellmacher</entry>
-	<entry key="Zeitalter">Kolonialzeit</entry>
+	<entry key="Zeitalter">Industriezeitalter</entry>
 	<entry key="Muenzen">0</entry>
 	<entry key="Werkzeug">0</entry>
 	<entry key="Personen">180</entry>

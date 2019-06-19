@@ -20,5 +20,6 @@ public enum Produktions_enum {
 	Segelmacher,
 	Parfüm_Destillerie,
 	Uhrmacher,
-	Stellmacher
+	Stellmacher,
+	Chemiefabrik
 }
