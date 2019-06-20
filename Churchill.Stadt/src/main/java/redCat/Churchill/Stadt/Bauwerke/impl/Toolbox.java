@@ -151,6 +151,12 @@ public class Toolbox {
 			
 		case 19:
 			return new Mansarddach_Haus();
+			
+		case 20:
+			return new Residenz();
+			
+		case 21:
+			return new Pension();
 
 		default:
 			return null;

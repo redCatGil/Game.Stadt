@@ -20,6 +20,7 @@ public enum Gebaeude_enum {
 	Arkadenhaus,
 	Kolonialhaus,
 	Landhaus,
-	Mansarddach_Haus
-
+	Mansarddach_Haus,
+	Residenz,
+	Pension
 }
