@@ -22,5 +22,7 @@ public enum Gebaeude_enum {
 	Landhaus,
 	Mansarddach_Haus,
 	Residenz,
-	Pension
+	Pension,
+	Viktorianisches_Haus,
+	Arbeiterhaus
 }

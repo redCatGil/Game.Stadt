@@ -157,6 +157,12 @@ public class Toolbox {
 			
 		case 21:
 			return new Pension();
+			
+		case 22:
+			return new ViktorianischesHaus();
+			
+		case 23:
+			return new Arbeiterhaus();
 
 		default:
 			return null;
